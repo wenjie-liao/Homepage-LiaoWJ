@@ -296,6 +296,10 @@ figcaption {
 footer {
   margin-top: 4rem;
 }
+.footer-counter {
+  display: inline-block;
+  white-space: nowrap;
+}
 @media (max-width: 760px) {
   .theme-grid {
     grid-template-columns: 1fr;

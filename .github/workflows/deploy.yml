@@ -67,6 +67,12 @@ jobs:
       - name: Check built website privacy
         run: python3 scripts/check-privacy.py --site _site
 
+      - name: Check search metadata and sitemap
+        shell: bash
+        run: |
+          site_url="$(ruby -ryaml -e 'c = YAML.load_file("_config.pages.yml"); print c.fetch("url") + c.fetch("baseurl") + "/"')"
+          python3 scripts/check-seo.py _site "$site_url"
+
       - name: Upload built website
         if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         uses: actions/upload-pages-artifact@v4

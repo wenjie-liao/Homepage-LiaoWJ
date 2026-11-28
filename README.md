@@ -92,6 +92,7 @@ python scripts/check-privacy.py --history
 
 - [内容维护指南](docs/CONTENT-GUIDE-ZH.md)
 - [发布指南](docs/QUICKSTART-ZH.md)
+- [Google、Bing、百度收录操作步骤](docs/SEARCH-ENGINES-ZH.md)
 - [内容与素材来源](docs/SOURCES.md)
 - [验证说明与记录](docs/VALIDATION.md)
 
