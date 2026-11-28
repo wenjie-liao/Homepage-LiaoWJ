@@ -1,0 +1,61 @@
+{% assign is_chinese = false %}
+{% if page.lang == 'zh' %}{% assign is_chinese = true %}{% endif %}
+{% assign ordered_papers = site.data.publications | sort: 'sort_key' | reverse %}
+{% assign previous_year = '' %}
+<div class="paper-list">
+{% for paper in ordered_papers %}
+  {% assign show_paper = true %}
+  {% if include.theme %}
+    {% unless paper.themes contains include.theme %}{% assign show_paper = false %}{% endunless %}
+  {% endif %}
+  {% if show_paper %}
+    {% assign display_title = paper.title %}
+    {% assign display_summary = paper.summary %}
+    {% assign display_caption = paper.figure_caption %}
+    {% if is_chinese %}
+      {% assign display_title = paper.title_zh | default: paper.title %}
+      {% assign display_summary = paper.summary_zh | default: paper.summary %}
+      {% assign display_caption = paper.figure_caption_zh | default: paper.figure_caption %}
+    {% endif %}
+    {% if paper.year != previous_year %}
+      <h2 class="paper-year" id="year-{{ paper.year }}">{{ paper.year }}</h2>
+      {% assign previous_year = paper.year %}
+    {% endif %}
+    <article class="paper-entry" id="paper-{{ paper.id }}" aria-labelledby="title-{{ paper.id }}">
+      {% if paper.figure %}
+      <figure class="paper-figure">
+        <a href="{{ paper.figure | relative_url }}" aria-label="{% if is_chinese %}查看方法图：{% else %}View method figure for {% endif %}{{ display_title | escape }}">
+          <img src="{{ paper.figure | relative_url }}" alt="{{ display_caption | default: display_title | escape }}" loading="lazy" decoding="async">
+        </a>
+        <figcaption>{{ display_caption | escape }}{% if paper.figure_number %} <span class="paper-figure-source">{% if is_chinese %}来源：论文图 {{ paper.figure_number }}。{% else %}Source: Fig. {{ paper.figure_number }} in this paper.{% endif %}</span>{% endif %}</figcaption>
+      </figure>
+      {% endif %}
+      <div class="paper-content">
+        <p class="paper-venue">{{ paper.journal | escape }} · {{ paper.year }}{% if paper.online_date %} <span class="paper-online-date">· {% if is_chinese %}在线发表{% else %}Online{% endif %} {{ paper.online_date }}</span>{% endif %}</p>
+        <h3 id="title-{{ paper.id }}">{% if paper.doi %}<a href="https://doi.org/{{ paper.doi | escape }}">{{ display_title | escape }}</a>{% else %}{{ display_title | escape }}{% endif %}</h3>
+        {% if is_chinese %}<p class="paper-original-title" lang="en">{{ paper.title | escape }}</p>{% endif %}
+        <p class="paper-authors" lang="en">{% for author in paper.authors %}{% if author.name == 'Wenjie Liao' %}<strong>{{ author.name | escape }}</strong>{% else %}{{ author.name | escape }}{% endif %}{% if author.affiliations.size > 0 %}<sup>{{ author.affiliations | join: ', ' | escape }}</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+        {% if paper.affiliations.size > 0 %}
+        <details class="paper-affiliations">
+          <summary>{% if is_chinese %}作者单位{% else %}Author affiliations{% endif %}</summary>
+          <ul lang="en">{% for affiliation in paper.affiliations %}<li><span class="affiliation-marker">{{ affiliation.id | escape }}</span> {{ affiliation.text | escape }}</li>{% endfor %}</ul>
+        </details>
+        {% endif %}
+        <p class="paper-summary">{{ display_summary | escape }}</p>
+        <div class="paper-links">
+          {% if paper.doi %}<a href="https://doi.org/{{ paper.doi | escape }}">{% if is_chinese %}论文信息{% else %}Publication details{% endif %}</a>{% endif %}
+          {% for theme in paper.themes %}
+            {% case theme %}
+              {% when 'generative-design' %}{% if is_chinese %}{% assign theme_title = '生成式人工智能结构设计' %}{% else %}{% assign theme_title = 'Generative AI structural design' %}{% endif %}
+              {% when 'structural-optimization' %}{% if is_chinese %}{% assign theme_title = '结构智能优化' %}{% else %}{% assign theme_title = 'Intelligent structural optimization' %}{% endif %}
+              {% when 'seismic-resilience' %}{% if is_chinese %}{% assign theme_title = '抗震性能与韧性' %}{% else %}{% assign theme_title = 'Seismic performance & resilience' %}{% endif %}
+            {% endcase %}
+            {% capture theme_url %}{% if is_chinese %}/zh{% endif %}/research/{{ theme }}/{% endcapture %}
+            <a class="paper-theme" href="{{ theme_url | relative_url }}">{{ theme_title | escape }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </article>
+  {% endif %}
+{% endfor %}
+</div>

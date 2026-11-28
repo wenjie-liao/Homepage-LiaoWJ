@@ -1,0 +1,104 @@
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--site-border);
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: 0.75rem;
+  color: var(--global-theme-color);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+.paper-original-title {
+  color: var(--site-muted);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  margin: -0.2rem 0 0.75rem;
+}
+.course-entry {
+  margin: 2rem 0 3rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--site-border);
+}
+.course-meta {
+  color: var(--site-muted);
+  font-size: 0.9375rem;
+}
+.course-outline {
+  padding-left: 1.5rem;
+}
+.course-outline li {
+  padding-left: 0.3rem;
+  margin: 0 0 1.1rem;
+}
+.course-outline strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+html[lang="zh-CN"] .post-header .desc,
+html[lang="zh-CN"] .paper-summary {
+  line-height: 1.9;
+}
+/* The complete bilingual menu fits on one row from 1024px upward.
+   Keep its collapse state independent of the theme's 576px breakpoint. */
+#navbar.navbar-expand-site > .container {
+  flex-wrap: wrap;
+}
+#navbar .navbar-toggler-main {
+  display: block;
+  margin-left: 0;
+  min-height: 44px;
+}
+#navbar .navbar-collapse-main {
+  display: none;
+  order: 4;
+  width: 100%;
+  flex-basis: 100%;
+  min-width: 0;
+  text-align: left;
+  max-height: calc(100vh - 5rem);
+  overflow-y: auto;
+}
+#navbar .navbar-collapse-main.show {
+  display: block;
+}
+#navbar .navbar-menu-list {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 0;
+}
+#navbar .navbar-menu-list .nav-link {
+  padding: 0.5rem 0;
+}
+#navbar .navbar-menu-list #light-toggle {
+  transform: none;
+}
+@media (min-width: 1024px) {
+  #navbar.navbar-expand-site > .container { flex-wrap: nowrap; }
+  #navbar .language-switch { order: 3; margin-left: 0.75rem; margin-right: 0; }
+  #navbar .navbar-toggler-main { display: none; }
+  #navbar .navbar-collapse-main,
+  #navbar .navbar-collapse-main.show {
+    display: flex;
+    order: 2;
+    flex-basis: auto;
+    width: auto;
+    max-height: none;
+    overflow: visible;
+  }
+  #navbar .navbar-menu-list {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    margin-left: auto;
+  }
+  #navbar .navbar-menu-list .nav-link { padding: 0.5rem; }
+}
+
+.course-details summary { cursor: pointer; color: var(--global-theme-color); padding: 0.4rem 0; width: fit-content; }
+.course-details summary span { color: var(--site-muted); font-size: 0.875rem; }
+.course-details summary:focus-visible { outline: 3px solid var(--global-theme-color); outline-offset: 4px; }
+.course-details[open] .course-outline { margin-top: 1rem; }

@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "lint:prettier": "prettier . --check",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.11.1",
+    "prettier": "^3.9.9"
+  }
+}

@@ -1,0 +1,243 @@
+[
+  {
+    "id": "seismic-design",
+    "level": "undergraduate",
+    "title": "Seismic Design of Building Structures",
+    "title_zh": "建筑结构抗震设计",
+    "summary": "This undergraduate course connects earthquake response analysis with the seismic design of common building systems. Topics cover site and foundation effects, structural dynamics, seismic actions, and the design of masonry, reinforced concrete, steel, and industrial buildings. Isolation, energy dissipation, and structural control extend the discussion from resisting earthquake forces to managing structural response, alongside applications of intelligent methods in earthquake engineering.",
+    "summary_zh": "本课程面向本科生，将结构地震反应分析与建筑抗震设计相结合。内容涵盖场地与地基、结构动力分析和地震作用，以及砌体、钢筋混凝土、钢结构和单层厂房的抗震设计，进一步介绍隔震、消能减震、结构控制与地震工程智能化方法。",
+    "topics": [
+      {
+        "title": "Sites and foundations",
+        "title_zh": "场地与地基",
+        "description": "Site classification and seismic effects, foundation verification, and soil liquefaction mitigation.",
+        "description_zh": "理解场地条件对地震动的影响，学习地基抗震验算与液化防治。"
+      },
+      {
+        "title": "Seismic response analysis and design calculations",
+        "title_zh": "结构地震反应分析与抗震计算",
+        "description": "Single- and multiple-degree-of-freedom systems, response spectra, torsion, nonlinear response, and seismic verification.",
+        "description_zh": "围绕单自由度与多自由度体系，学习反应谱、扭转耦合、非弹性反应及抗震验算。"
+      },
+      {
+        "title": "Seismic design of masonry buildings",
+        "title_zh": "多层砌体结构抗震设计",
+        "description": "Earthquake damage, structural layout, design calculations, and seismic detailing for masonry buildings.",
+        "description_zh": "结合典型震害理解砌体结构的布置、抗震计算与构造措施。"
+      },
+      {
+        "title": "Seismic design of reinforced concrete buildings",
+        "title_zh": "多高层钢筋混凝土结构抗震设计",
+        "description": "Design principles and applications to frames, shear walls, and frame–wall systems.",
+        "description_zh": "学习框架、抗震墙及框架—抗震墙体系的抗震设计原则与应用。"
+      },
+      {
+        "title": "Seismic design of steel buildings",
+        "title_zh": "多高层建筑钢结构抗震设计",
+        "description": "Seismic damage mechanisms, system selection, conceptual design, analysis requirements, and detailing.",
+        "description_zh": "从震害机理出发，学习钢结构选型、概念设计、抗震计算与构造要求。"
+      },
+      {
+        "title": "Seismic design of industrial buildings",
+        "title_zh": "单层厂房抗震设计",
+        "description": "Seismic behavior, analysis, and detailing of single-story industrial buildings.",
+        "description_zh": "认识单层厂房的地震反应特点及相应抗震计算和构造方法。"
+      },
+      {
+        "title": "Isolation, energy dissipation, and structural control",
+        "title_zh": "隔震、减震与结构控制初步",
+        "description": "Fundamental strategies for reducing seismic demand and controlling structural vibration.",
+        "description_zh": "了解通过隔震、消能减震与振动控制改善结构地震表现的基本思路。"
+      },
+      {
+        "title": "Intelligent methods in earthquake engineering",
+        "title_zh": "地震工程智能化研究进展",
+        "description": "AI methods for ground-motion prediction, structural response analysis, and seismic protection design.",
+        "description_zh": "介绍地震动预测、结构响应分析以及抗震、减震、隔震设计中的智能化方法。"
+      }
+    ]
+  },
+  {
+    "id": "construction-data-analytics",
+    "level": "undergraduate",
+    "title": "Big Data Applications and Analytics in Intelligent Construction",
+    "title_zh": "智能建造大数据应用与分析",
+    "summary": "This undergraduate course follows engineering data from collection and cleaning through statistical analysis, feature engineering, and visualization. It introduces supervised and unsupervised learning before exploring neural networks for sequences, images, point clouds, and graphs. Construction and structural engineering examples connect algorithms to practical tasks, with exercises that make data preprocessing and model computations explicit.",
+    "summary_zh": "本课程面向本科生，围绕工程数据从采集到应用的过程，讲授数据清洗、统计分析、特征工程与可视化，并进一步介绍监督学习、无监督学习及面向时序、图像、点云和图数据的深度学习。结合智能建造与结构工程案例，通过计算练习理解数据处理和模型运行机制。",
+    "topics": [
+      {
+        "title": "Big data: concepts and development",
+        "title_zh": "大数据基本概念及发展概况",
+        "description": "Core ideas of big data and their relevance to construction and engineering analysis.",
+        "description_zh": "认识大数据的基本概念及其在建造和工程分析中的应用背景。"
+      },
+      {
+        "title": "Data collection, cleaning, and standardization",
+        "title_zh": "大数据采集、清洗及标准化",
+        "description": "Engineering data quality, missing values, outliers, duplicate records, and numerical scaling.",
+        "description_zh": "处理工程数据中的缺失、异常与重复问题，理解标准化和归一化方法。"
+      },
+      {
+        "title": "Statistical analysis",
+        "title_zh": "统计分析",
+        "description": "Distributions, central tendency, dispersion, and comparisons between data distributions.",
+        "description_zh": "通过分布、中心趋势、离散性与数据分布比较理解工程数据特征。"
+      },
+      {
+        "title": "Feature engineering",
+        "title_zh": "数据特征提取",
+        "description": "Feature relationships, correlation analysis, feature selection, and dimensionality reduction.",
+        "description_zh": "分析特征之间的关联，学习特征筛选与降维方法。"
+      },
+      {
+        "title": "Data visualization",
+        "title_zh": "数据可视化",
+        "description": "Python-based exploration, visualization of feature correlations, and literature visualization.",
+        "description_zh": "使用Python开展数据探索，展示特征相关性并了解文献可视化。"
+      },
+      {
+        "title": "Supervised learning",
+        "title_zh": "监督学习",
+        "description": "Learning from labeled engineering data, including neural-network predictions and forward calculations.",
+        "description_zh": "学习利用有标签工程数据进行预测，并通过前馈计算理解神经网络。"
+      },
+      {
+        "title": "Unsupervised learning",
+        "title_zh": "无监督学习",
+        "description": "Discovering patterns in unlabeled data, with clustering and practical k-means calculations.",
+        "description_zh": "通过聚类等方法发现无标签数据的结构，理解k-means的计算过程。"
+      },
+      {
+        "title": "Recurrent neural networks",
+        "title_zh": "循环神经网络",
+        "description": "Tensor representations, sequence modeling, recurrent computation, and long short-term memory.",
+        "description_zh": "认识张量与时序数据，学习RNN及LSTM的计算与建模思路。"
+      },
+      {
+        "title": "Convolutional neural networks",
+        "title_zh": "卷积神经网络",
+        "description": "Image features, convolution, pooling, and neural-network applications in construction vision.",
+        "description_zh": "学习卷积、池化与图像特征提取，联系智能建造视觉分析任务。"
+      },
+      {
+        "title": "3D point-cloud analysis",
+        "title_zh": "三维点云数据智能分析",
+        "description": "Point-cloud acquisition, analysis, classification, and applications in intelligent construction.",
+        "description_zh": "了解三维点云的获取、分析与分类，以及智能建造中的应用。"
+      },
+      {
+        "title": "Graph data analysis",
+        "title_zh": "图数据智能分析",
+        "description": "Graph representations and graph neural-network calculations for relational data.",
+        "description_zh": "理解图数据表达与图神经网络计算，分析工程对象之间的关联。"
+      },
+      {
+        "title": "Intelligent design applications",
+        "title_zh": "大数据与AI应用：智能设计",
+        "description": "Using engineering data and AI to support the design of building structures.",
+        "description_zh": "结合建筑结构设计任务，理解工程数据与人工智能的应用方式。"
+      }
+    ],
+    "code": "ISCT043110"
+  },
+  {
+    "id": "civil-engineering-ai",
+    "level": "graduate",
+    "title": "Fundamentals of Artificial Intelligence in Civil Engineering",
+    "title_zh": "土木工程人工智能基础",
+    "summary": "This graduate course examines how neural networks represent and learn from civil engineering data. The available modules connect recurrent, convolutional, point-cloud, and graph architectures with worked computations and engineering examples, then introduce language models and attention. Interactive calculations clarify forward propagation, gradient updates, and information aggregation, while programming and application examples relate these mechanisms to structural and construction tasks.",
+    "summary_zh": "本课程面向研究生，关注神经网络如何表达和学习土木工程数据。现有教学内容覆盖循环神经网络、卷积神经网络、点云学习、图神经网络和大语言模型，通过交互计算理解前馈传播、梯度更新与信息聚合，并结合编程实践和工程案例建立算法与应用之间的联系。",
+    "topics": [
+      {
+        "title": "Deep learning and recurrent networks",
+        "title_zh": "深度学习基础与循环神经网络",
+        "description": "Neural-network foundations, sequence representations, RNNs, backpropagation through time, and LSTM calculations.",
+        "description_zh": "从神经网络基础进入时序建模，学习RNN、时间反向传播与LSTM门控计算。"
+      },
+      {
+        "title": "Convolutional networks and engineering vision",
+        "title_zh": "卷积神经网络与工程视觉实践",
+        "description": "Convolution, pooling, forward and backward calculations, object detection, and concrete crack analysis.",
+        "description_zh": "理解卷积与池化的前向和反向计算，结合目标检测及混凝土裂缝分析认识工程视觉。"
+      },
+      {
+        "title": "Point-cloud learning and programming",
+        "title_zh": "点云数据智能分析与编程实践",
+        "description": "3D acquisition, registration, segmentation, PointNet and PointNet++, and bridge point-cloud processing.",
+        "description_zh": "学习点云获取、配准、分割及PointNet系列模型，并联系桥梁点云处理实践。"
+      },
+      {
+        "title": "Graph neural networks",
+        "title_zh": "图神经网络",
+        "description": "Graph representations, message passing, node embeddings, GCN, GraphSAGE, GAT, and structural design applications.",
+        "description_zh": "围绕图表达、消息传递和节点嵌入，学习典型GNN模型及结构设计应用。"
+      },
+      {
+        "title": "Large language models",
+        "title_zh": "大语言模型",
+        "description": "Tokens, embeddings, attention, Transformer components, and applications to engineering knowledge and construction tasks.",
+        "description_zh": "理解token、词向量、注意力与Transformer，并认识工程知识处理及智能建造应用。"
+      }
+    ],
+    "code": "GS30104001-04"
+  },
+  {
+    "id": "intelligent-structural-design",
+    "level": "graduate",
+    "title": "Intelligent Design of Engineering Structures",
+    "title_zh": "工程结构智能设计",
+    "summary": "This graduate course connects artificial intelligence with engineering structural design. It introduces parametric modeling, machine learning, deep generative models, and intelligent optimization, then develops applications to structural layouts, member sizing, and performance evaluation. Topics emphasize how engineering rules and mechanics can be integrated with data-driven methods, including GANs, graph neural networks, diffusion models, and workflows that combine design generation with optimization.",
+    "summary_zh": "本课程面向研究生，将人工智能算法与工程结构设计相结合。从参数化建模、机器学习和智能优化出发，介绍GAN、图神经网络与扩散模型在结构布置、构件尺寸和性能评估中的应用，重点讨论工程规则与力学知识的融入，以及生成设计和优化设计的协同。",
+    "topics": [
+      {
+        "title": "Introduction",
+        "title_zh": "绪论",
+        "description": "Motivation, engineering applications, and foundational tools for intelligent structural design.",
+        "description_zh": "认识结构智能设计的工程需求、应用场景与基础工具。"
+      },
+      {
+        "title": "Fundamentals of AI algorithms",
+        "title_zh": "人工智能算法基础",
+        "description": "Parametric design, machine-learning methods, and Python demonstrations.",
+        "description_zh": "学习参数化设计与机器学习方法，并通过Python演示理解实现过程。"
+      },
+      {
+        "title": "Deep learning and generative AI",
+        "title_zh": "深度学习与生成式AI",
+        "description": "Recurrent, convolutional, and graph networks; VAEs, GANs, diffusion models, Transformers, and multimodal models.",
+        "description_zh": "认识典型深度学习网络，以及VAE、GAN、扩散模型、Transformer和多模态模型。"
+      },
+      {
+        "title": "Intelligent optimization methods",
+        "title_zh": "智能优化方法",
+        "description": "Gradient methods, genetic algorithms, particle swarm optimization, simulated annealing, Bayesian optimization, and reinforcement learning.",
+        "description_zh": "理解梯度优化、遗传算法、粒子群、模拟退火、贝叶斯优化与强化学习。"
+      },
+      {
+        "title": "GAN-based intelligent design",
+        "title_zh": "基于GAN的智能设计方法",
+        "description": "Image-to-image design, data preparation, model evaluation, text–image fusion, and mechanics- and rule-guided generation.",
+        "description_zh": "围绕数据准备、训练与评价，学习图到图生成、文本图像融合及力学和规则引导设计。"
+      },
+      {
+        "title": "GNN-based intelligent design",
+        "title_zh": "基于GNN的智能设计方法",
+        "description": "Joint reasoning about structural components, beam and shear wall layouts, material use, and mechanical performance.",
+        "description_zh": "利用构件关系开展梁和剪力墙布置设计，并学习材料用量与力学性能预测。"
+      },
+      {
+        "title": "Diffusion-based intelligent design",
+        "title_zh": "基于扩散模型的智能设计方法",
+        "description": "Shear wall layout generation, mechanics-enhanced diffusion, and member sizing in frame structures.",
+        "description_zh": "学习扩散模型驱动的剪力墙布置、力学增强生成与框架构件尺寸设计。"
+      },
+      {
+        "title": "Intelligent optimization for structural design",
+        "title_zh": "智能优化设计方法",
+        "description": "Mechanical response and material-use assessment, structural optimization, and generation–optimization workflows.",
+        "description_zh": "将力学响应与材料用量评估用于结构优化，构建生成与优化协同的设计过程。"
+      }
+    ],
+    "code": "GS30106003"
+  }
+]
