@@ -1,48 +1,39 @@
-# Validation · 2026-11-27
+# 验证说明与记录
 
-- Jekyll 4.4.1 build passed using the pinned al-folio core 1.0.15.
-- Personal-site root deployment and `/personal-site` project deployment both passed: 10 HTML pages, 235 local references.
-- No unresolved Liquid expressions or sample Einstein profile text in the built HTML.
-- Prettier passed after formatting.
-- al-folio upgrade audit: 0 blocking and 0 non-blocking findings. The main Sass entry override is acknowledged.
-- An isolated temporary site with synthetic BibTeX records verified publication rendering, selected-publication filtering, abstracts, code links, and BibTeX display. Those records are not in the personal site or deliverable archives.
-- Browser checks verified home/research/publications navigation, a 390 px mobile viewport, the mobile navigation menu, and light/dark mode. No horizontal overflow was observed in the checked mobile page.
-- GitHub Pages URL configuration passed personal-site, project-site, and custom-domain cases.
+所有命令从本仓库根目录运行。下述记录区分本地检查与远程发布；本地构建通过不表示 GitHub Pages 已更新。
 
-The source has been prepared for the existing `wenjie-liao/homepage` repository on the `init` branch. Its remote default branch is `main`. The workflow checks `init` and pull requests, and publishes pushes or manual runs on `main`/`master`.
+## 当前内容与检查范围
 
-Migration checks in `E:\Gitcodes\Homepage-LiaoWJ` on 2026-11-27:
+截至 2026-11-28，源数据包含 23 篇论文，三个研究主题分别为 18、5、6 篇（可交叉归类），以及 4 门课程、33 个双语教学主题。网站有 22 个中英文 HTML 页面。
 
-- Copied 40 editable source files; the existing `.git` metadata was unchanged during the copy, with the `init` branch and origin retained.
-- The relocated `scripts/preview.ps1 -Rebuild` found the sibling portable Ruby runtime and successfully built the site. The HTTP preview returned 200 with the expected profile content.
-- The local root build passed 10 HTML pages and 235 local references.
-- The production build using generated `url: https://wenjie-liao.github.io` and `baseurl: /homepage` passed 10 HTML pages and 225 local references.
-- Git ignored `_site/`, `_site_project/`, and `_config.pages.yml` as intended.
+`scripts/check-site.rb` 验证必需页面、内部链接、语言对应关系、论文展示与方法图、课程覆盖，以及私有材料目录和链接的排除情况。`scripts/check-privacy.py` 默认检查当前跟踪文件和暂存变更，`--site` 检查构建产物，`--history` 单独检查本地可达历史。
 
-No remote GitHub Actions run or public deployment has been verified. Local browser checks do not establish overseas network performance.
+```sh
+python scripts/check-privacy.py
+bundle exec jekyll build
+bundle exec ruby scripts/check-site.rb
+python scripts/check-privacy.py --site _site
+python scripts/check-privacy.py --history
+```
 
+检查结果应与本次构建配置和工作区版本对应。新增文件须人工审阅；自动规则不能识别所有私人信息，也不能代替对图片、附件内容及元数据的检查。
 
-## Publication and teaching update · 2026-11-28
+## 本次本地验证 · 2026-11-28
 
-- Active working directory: `E:\Gitcodes\Homepage-LiaoWJ`.
-- Read all 23 supplied papers and independently cross-checked titles, author order, affiliations, DOI, and journal years. Each record has an original English summary and one visually inspected method-figure crop with attribution.
-- Publications contains 23 unique records; research listings contain 18 generative-design, 7 structural-optimization, and 5 seismic-resilience records, with intentional cross-listing.
-- Journal year grouping and within-year chronological sort keys were verified. Two supplied Engineering Structures articles carry 2027 issue years; only explicit online dates are displayed.
-- Research overview removed; platform spelling unified as AI-structure Copilot. Teaching includes the verified GS30106003 graduate course and eight topics from local source slides; no unverified semester or credit information is presented.
-- Local build: 11 HTML pages and 446 local references passed. Production build at `/homepage`: 11 HTML pages and 435 local references passed.
-- Git ignores all 23 paper PDFs; none were tracked or present in local Git history. Original source directories are excluded from Jekyll and ZIP packaging. Private teaching slides also remain local.
-- Browser QA checked desktop and 390px mobile layout, author-affiliation disclosure, mobile navigation, dark mode, theme membership, and Teaching. Checked layouts had no horizontal overflow.
-- Local preview uses port 4174 because an older preview still serves port 4173.
-- No commit, push, or remote deployment was performed during this update.
+- 根路径构建及站点检查通过：22 个 HTML 页面、946 个内部引用、23 篇论文。
+- `/homepage` 项目路径构建及站点检查通过：22 个 HTML 页面、880 个内部引用、23 篇论文。
+- 使用无敏感内容的临时样本验证了私有目录、论文目录、密钥扩展名和环境配置文件被 Jekyll 排除；测试样本已清理。
+- 仓库本地提交邮箱已设置为 GitHub 隐私邮箱，用于后续提交。
+- 本地历史审计仍发现私人作者邮箱和旧本机路径。当前源码清理不等于历史清除；此次未改写历史、提交或推送。
+- 当前跟踪源码、根路径产物与项目路径产物的隐私扫描均通过；本地提交前钩子已启用并通过实际调用验证。
+- 隐私检查回归测试共 11 项，10 项通过；真实符号链接用例因 Windows 权限跳过，另有 Windows reparse point 模拟用例通过。
+- 在隔离临时仓库中验证源码与离线预览打包成功：必需脚本包含在源码包中，未跟踪文件、Git 元数据和构建目录未进入源码包。临时验证目录已清理。
+- 本次未验证远程 Actions 或线上部署结果。
 
+## 先前记录的界面检查
 
-## Bilingual teaching update · 2026-11-28
+此前的双语版本检查覆盖桌面与 390px 手机布局、640px 导航、英文／中文页面切换、课程大纲展开、论文作者与单位展开、研究主题筛选和深浅色模式。被检查的布局未出现横向溢出。这些记录描述当时的界面，不能代替后续布局改动的重新检查。
 
-- Reviewed 44 local teaching materials across four courses: two undergraduate and two graduate. Course data contains 33 bilingual topics, supported by the supplied PDFs, slides, interactive HTML lessons, and assignment documents. Public pages contain original summaries and outlines only.
-- Added `/assets/teaching/` to Git ignore rules, Jekyll exclusions, and both source/preview archive exclusions. Existing private paper and legacy slide exclusions remain active.
-- Implemented 11 matching Chinese pages under `/zh/` with static language switches, locale-specific navigation, `lang`, and `hreflang`. All 23 publications have Chinese titles, summaries, and figure captions; official English titles and author records are retained.
-- Homepage and footer profile links are Chinese faculty homepage, GitHub, and ORCID. Removed the English faculty-profile link from generated pages.
-- Chinese name text uses a CJK sans-serif font stack; English name/location use the site's standard Latin font stack. The Chinese homepage includes the location in Chinese.
-- Root build passed 22 HTML pages and 958 internal references. Production `/homepage` build passed 22 pages and 892 internal references. Checks cover exact language counterparts, required bilingual pages, publication membership, course coverage, private directory exclusion, and private source-link exclusion.
-- Browser checks verified English/Chinese home and course switching, 23 Chinese publication entries, course-outline disclosure, the 640px navigation fix, 390px mobile layout, and 1024px desktop navigation. Checked layouts had no horizontal overflow.
-- No commit, push, or remote deployment was performed.
+## 隐私检查的边界
+
+`.gitignore`、Jekyll 排除和打包限制共同防止本地私有材料进入新的公开内容；它们不会删除已提交的历史。历史审计只覆盖本地可达记录，不证明远程仓库、克隆、分叉、下载副本或缓存中的信息已消除。若发现曾提交的凭据，应撤销或轮换，再单独处理历史。公开修复记录只描述问题类型，不复述敏感原值。

@@ -33,3 +33,23 @@ output/
 
 # Private course source files (PDF, slides, documents, interactive lessons).
 /assets/teaching/
+
+# Local-only personal material, credentials, and assistant configuration.
+/private/
+/secrets/
+/.agents/
+/.codex/
+/.claude/
+/.aws/
+/.ssh/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+*.log
+*.bak
+*.tmp

@@ -26,7 +26,7 @@ latest_posts:
   <p class="lead">I study how artificial intelligence can generate and improve engineering structures, with a focus on building design and seismic resilience.</p>
 </div>
 
-I am a researcher at Southwest Jiaotong University. I received my PhD from Tsinghua University in 2022 and continued there as a postdoctoral researcher until 2024. My work connects generative design, structural performance, and engineering applications.
+I am a researcher at Southwest Jiaotong University. I received my PhD from Tsinghua University in 2022 and continued there as a postdoctoral researcher until 2024. My research focuses on AI-driven structural design and optimization, including generative design of building structures and structural seismic resilience.
 
 <div class="site-actions">
   <a class="action-primary" href="{{ '/research/' | relative_url }}">Explore my research</a>

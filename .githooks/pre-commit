@@ -1,0 +1,9 @@
+#!/bin/sh
+# Stop a local commit before detected private data reaches the public repository.
+for interpreter in python python3; do
+  if "$interpreter" -c 'import sys; sys.exit(sys.version_info < (3, 9))' >/dev/null 2>&1; then
+    exec "$interpreter" scripts/check-privacy.py
+  fi
+done
+echo 'Python 3.9 or newer is required for the privacy check.' >&2
+exit 1
