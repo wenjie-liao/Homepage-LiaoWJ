@@ -1,0 +1,22 @@
+{% assign course_levels = 'undergraduate,graduate' | split: ',' %}
+{% for level in course_levels %}
+<section class="course-level" aria-labelledby="level-{{ level }}">
+  <h2 id="level-{{ level }}">{% if page.lang == 'zh' %}{% if level == 'undergraduate' %}本科生课程{% else %}研究生课程{% endif %}{% else %}{% if level == 'undergraduate' %}Undergraduate courses{% else %}Graduate courses{% endif %}{% endif %}</h2>
+  {% assign courses = site.data.teaching | where: 'level', level %}
+  {% for course in courses %}
+  <article class="course-entry" id="course-{{ course.id }}">
+    <h3>{% if page.lang == 'zh' %}{{ course.title_zh | escape }}{% else %}{{ course.title | escape }}{% endif %}</h3>
+    {% if course.code %}<p class="course-meta">{% if page.lang == 'zh' %}课程代码{% else %}Course code{% endif %} · {{ course.code | escape }}</p>{% endif %}
+    <p>{% if page.lang == 'zh' %}{{ course.summary_zh | escape }}{% else %}{{ course.summary | escape }}{% endif %}</p>
+    <details class="course-details">
+      <summary>{% if page.lang == 'zh' %}课程内容{% else %}Course outline{% endif %} <span>({{ course.topics.size }})</span></summary>
+      <ol class="course-outline">
+      {% for topic in course.topics %}
+        <li><strong>{% if page.lang == 'zh' %}{{ topic.title_zh | escape }}{% else %}{{ topic.title | escape }}{% endif %}</strong>{% if page.lang == 'zh' %}{{ topic.description_zh | escape }}{% else %}{{ topic.description | escape }}{% endif %}</li>
+      {% endfor %}
+      </ol>
+    </details>
+  </article>
+  {% endfor %}
+</section>
+{% endfor %}

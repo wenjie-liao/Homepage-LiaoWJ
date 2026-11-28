@@ -1,0 +1,1747 @@
+[
+  {
+    "id": "lu2019-sedo",
+    "title": "Development of a novel sacrificial-energy dissipation outrigger system for tall buildings",
+    "year": 2019,
+    "date": "2019-01-01",
+    "authors": [
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Yao Cui",
+        "affiliations": [
+          "3"
+        ]
+      },
+      {
+        "name": "Qing Jiang",
+        "affiliations": [
+          "4"
+        ]
+      },
+      {
+        "name": "Yaning Zhu",
+        "affiliations": [
+          "5"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Key Laboratory of Civil Engineering Safety and Durability of China Education Ministry, Department of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "2",
+        "text": "Beijing Engineering Research Center of Steel and Concrete Composite Structures, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "3",
+        "text": "State Key Laboratory of Coastal and Offshore Engineering, Faculty of Infrastructure Engineering, Dalian University of Technology, Dalian, China"
+      },
+      {
+        "id": "4",
+        "text": "School of Civil and Hydraulic Engineering, Hefei University of Technology, Hefei, China"
+      },
+      {
+        "id": "5",
+        "text": "China Northwest Architecture Design and Research Institute Co. Ltd, China"
+      }
+    ],
+    "journal": "Earthquake Engineering & Structural Dynamics",
+    "doi": "10.1002/eqe.3218",
+    "summary": "A sacrificial-energy dissipation outrigger combines high-strength chords with braces that pair a sacrificial mechanism and a buckling-restrained energy dissipater. Component experiments and nonlinear structural analyses establish how controlled bolt failure limits brace overstrength while preserving energy dissipation. Application to a tall building demonstrates reduced damage demand on surrounding structural components, providing a practical route toward more resilient outrigger systems.",
+    "themes": [
+      "seismic-resilience"
+    ],
+    "figure": "/assets/img/publications/lu2019-sedo.png",
+    "figure_caption": "Conventional, buckling-restrained, and sacrificial-energy dissipation outriggers.",
+    "figure_number": "1",
+    "date_precision": "year",
+    "sort_key": "2019-2019-01-01",
+    "title_zh": "面向高层建筑的新型牺牲耗能伸臂体系研发",
+    "summary_zh": "牺牲耗能伸臂将高强度弦杆与结合牺牲机制和屈曲约束耗能构件的支撑相结合。构件试验和结构非线性分析揭示了受控螺栓破坏如何在保持耗能能力的同时限制支撑超强。高层建筑应用表明，该体系能够降低周围结构构件的损伤需求，为提高伸臂体系的抗震韧性提供了可行途径。",
+    "figure_caption_zh": "传统伸臂、屈曲约束支撑伸臂与牺牲耗能伸臂。"
+  },
+  {
+    "id": "lu2021-cnn-lqr",
+    "title": "An improved linear quadratic regulator control method through convolutional neural network-based vibration identification",
+    "year": 2021,
+    "date": "2021-01-01",
+    "authors": [
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Wei Huang",
+        "affiliations": [
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      {
+        "name": "Yongjia Xu",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Xingyu Chen",
+        "affiliations": [
+          "2"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Key Laboratory of Civil Engineering Safety and Durability of China Education Ministry, Department of Civil Engineering, Tsinghua University, China"
+      },
+      {
+        "id": "2",
+        "text": "Beijing Engineering Research Center of Steel and Concrete Composite Structures, Tsinghua University, China"
+      },
+      {
+        "id": "3",
+        "text": "Technology Research Center of Engineering Vibration Control, China IPPR International Engineering Co., Ltd., China"
+      },
+      {
+        "id": "4",
+        "text": "Beijing Materials Handling Research Institute Co., Ltd, China"
+      }
+    ],
+    "journal": "Journal of Vibration and Control",
+    "doi": "10.1177/1077546320933756",
+    "summary": "This study makes active vibration control responsive to changing excitation sources. A convolutional neural network identifies environmental vibrations from wavelet features, while a genetic algorithm determines suitable linear quadratic regulator parameters for each vibration class. The controller selects those parameters during operation. Case studies show improved control compared with fixed-parameter strategies, linking rapid vibration recognition with more effective use of actuator effort.",
+    "themes": [
+      "seismic-resilience"
+    ],
+    "figure": "/assets/img/publications/lu2021-cnn-lqr.png",
+    "figure_caption": "Vibration recognition and parameter selection within an adaptive LQR control framework.",
+    "figure_number": "1",
+    "date_precision": "year",
+    "sort_key": "2021-2021-01-01",
+    "title_zh": "基于卷积神经网络振动识别的改进线性二次型调节器控制方法",
+    "summary_zh": "本研究使主动振动控制能够适应激励来源的变化。卷积神经网络通过小波特征识别环境振动，遗传算法则为各类振动确定合适的线性二次型调节器参数，控制器在运行过程中据此选择参数。案例研究表明，该方法较固定参数策略具有更好的控制效果，将快速振动识别与作动器控制力的有效利用相结合。",
+    "figure_caption_zh": "自适应 LQR 控制框架中的振动识别与参数选择。"
+  },
+  {
+    "id": "liao2021-structgan",
+    "title": "Automated structural design of shear wall residential buildings using generative adversarial networks",
+    "year": 2021,
+    "date": "2021-09-16",
+    "authors": [
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Yuli Huang",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Zhe Zheng",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Yuanqing Lin",
+        "affiliations": [
+          "a",
+          "b"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing 100084, China"
+      },
+      {
+        "id": "b",
+        "text": "China Nuclear Power Engineering Co., Ltd., Zhengzhou Branch, Zhengzhou 450052, China"
+      }
+    ],
+    "journal": "Automation in Construction",
+    "doi": "10.1016/j.autcon.2021.103931",
+    "summary": "StructGAN learns to translate architectural drawings into preliminary shear wall layouts. The workflow combines semantic drawing representation, design-condition-based datasets, adversarial learning, and assessments informed by both engineers and computer vision. Building case studies compare generated schemes with professional designs through material consumption, seismic deformation, and repair costs. The results demonstrate substantially faster schematic design with engineering performance comparable to the reference solutions.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/liao2021-structgan.png",
+    "figure_caption": "StructGAN workflow from training data and design evaluation to structural application.",
+    "figure_number": "2",
+    "date_precision": "year",
+    "sort_key": "2021-2021-09-16",
+    "title_zh": "基于生成对抗网络的剪力墙住宅建筑自动化结构设计",
+    "summary_zh": "StructGAN 学习将建筑图纸转换为剪力墙初步布置方案。该流程结合图纸语义化表征、按设计条件组织的数据集、对抗学习，以及融合工程师判断和计算机视觉的评价方法。建筑案例从材料用量、地震变形和修复费用等方面比较生成方案与专业工程师设计。结果表明，该方法显著提高了方案设计效率，且工程性能与参考方案相当。",
+    "figure_caption_zh": "StructGAN 从训练数据、设计评价到结构应用的完整流程。"
+  },
+  {
+    "id": "liao2021-seismic-response-identification",
+    "title": "Deep Transfer Learning and Time-Frequency Characteristics-Based Identification Method for Structural Seismic Response",
+    "year": 2021,
+    "date": "2021-02-12",
+    "authors": [
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Xingyu Chen",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Yuli Huang",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Yuan Tian",
+        "affiliations": [
+          "2"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Beijing Engineering Research Center of Steel and Concrete Composite Structures, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "2",
+        "text": "Key Laboratory of Civil Engineering Safety and Durability of Ministry of Education, Tsinghua University, Beijing, China"
+      }
+    ],
+    "journal": "Frontiers in Built Environment",
+    "doi": "10.3389/fbuil.2021.627058",
+    "summary": "The method distinguishes earthquake-induced structural responses from everyday vibrations to support crowdsourced seismic monitoring. Wavelet transforms expose time-frequency patterns, and deep transfer learning classifies the resulting representations. Training uses responses simulated with structural models calibrated against monitored earthquake data. Validation with recorded signals demonstrates accurate identification, connecting accessible vibration sensing with the reliable event recognition needed for structural monitoring and seismic assessment.",
+    "themes": [
+      "seismic-resilience"
+    ],
+    "figure": "/assets/img/publications/liao2021-seismic-response-identification.png",
+    "figure_caption": "Time-frequency processing and transfer learning for identifying structural seismic responses.",
+    "figure_number": "1",
+    "date_precision": "year",
+    "sort_key": "2021-2021-02-12",
+    "title_zh": "基于深度迁移学习与时频特征的结构地震响应识别方法",
+    "summary_zh": "该方法将地震引起的结构响应与日常振动区分开来，为众包地震监测提供支持。小波变换提取时频特征，深度迁移学习对相应表征进行分类。训练所用响应由经实测地震数据校准的结构模型模拟得到。实测信号验证表明，该方法能够准确识别地震响应，将便捷的振动感知与结构监测及地震评估所需的可靠事件识别相衔接。",
+    "figure_caption_zh": "通过时频处理与迁移学习识别结构地震响应。"
+  },
+  {
+    "id": "liao2022-accelerometer-uncertainty",
+    "title": "Influence of accelerometer type on uncertainties in recorded ground motions and seismic damage assessment",
+    "year": 2022,
+    "date": "2022-07-14",
+    "authors": [
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Yifan Fei",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Farid Ghahari",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Wenyang Zhang",
+        "affiliations": [
+          "3"
+        ]
+      },
+      {
+        "name": "Peng-Yu Chen",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Asli Kurtulus",
+        "affiliations": [
+          "4"
+        ]
+      },
+      {
+        "name": "Chu-Han Yen",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Qingle Cheng",
+        "affiliations": [
+          "1",
+          "5"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Ertugrul Taciroglu",
+        "affiliations": [
+          "2"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing, People’s Republic of China"
+      },
+      {
+        "id": "2",
+        "text": "Department of Civil & Environmental Engineering, University of California, Los Angeles, CA, USA"
+      },
+      {
+        "id": "3",
+        "text": "Texas Advanced Computing Center, University of Texas, Austin, USA"
+      },
+      {
+        "id": "4",
+        "text": "Department of Civil Engineering, Özyeğin University, Istanbul, Turkey"
+      },
+      {
+        "id": "5",
+        "text": "School of Civil and Transportation Engineering, Beijing University of Civil Engineering and Architecture, Beijing, People’s Republic of China"
+      }
+    ],
+    "journal": "Bulletin of Earthquake Engineering",
+    "doi": "10.1007/s10518-022-01461-5",
+    "summary": "This study traces how accelerometer noise and network density influence regional seismic damage estimates. Simulated recordings from different sensor classes drive nonlinear building analyses using recorded and physics-based ground motions. Comparisons show that medium-quality MEMS sensors can support effective regional assessment, while low-quality smartphone sensors introduce substantial errors. The findings clarify the trade-off between measurement quality and spatial coverage when planning strong-motion networks.",
+    "themes": [
+      "seismic-resilience"
+    ],
+    "figure": "/assets/img/publications/liao2022-accelerometer-uncertainty.png",
+    "figure_caption": "Workflow linking sensor quality and spatial coverage to regional damage assessment.",
+    "figure_number": "1",
+    "date_precision": "year",
+    "sort_key": "2022-2022-07-14",
+    "title_zh": "加速度计类型对地震动记录不确定性及震害评估的影响",
+    "summary_zh": "本研究分析加速度计噪声和监测网络密度如何影响区域震害估计。基于实测地震动和物理模拟地震动，模拟不同等级传感器的记录，并用于建筑非线性分析。比较表明，中等质量的 MEMS 传感器能够支持有效的区域评估，而低质量手机传感器会引入显著误差。研究明确了强震监测网络规划中测量质量与空间覆盖之间的权衡关系。",
+    "figure_caption_zh": "连接传感器质量、空间覆盖与区域震害评估的方法流程。"
+  },
+  {
+    "id": "liao2022-txtimg2img",
+    "title": "Intelligent generative structural design method for shear wall building based on “fused-text-image-to-image” generative adversarial networks",
+    "year": 2022,
+    "date": "2022-08-13",
+    "authors": [
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Yuli Huang",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Zhe Zheng",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "1"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing 100084, China"
+      }
+    ],
+    "journal": "Expert Systems with Applications",
+    "doi": "10.1016/j.eswa.2022.118530",
+    "summary": "TxtImg2Img generates shear wall designs from architectural images and textual design requirements together. Dedicated encoders extract both forms of information, and feature fusion allows the adversarial network to condition its output on their combined meaning. Structural case studies demonstrate improved design performance over an image-only baseline. Additional image-generation tasks examine the broader applicability of the fusion strategy under limited training data.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/liao2022-txtimg2img.png",
+    "figure_caption": "TxtImg2Img architecture for encoding, fusing, and learning text and image features.",
+    "figure_number": "3",
+    "date_precision": "year",
+    "sort_key": "2022-2022-08-13",
+    "title_zh": "基于“融合文本图像到图像”生成对抗网络的剪力墙建筑智能生成式结构设计方法",
+    "summary_zh": "TxtImg2Img 同时利用建筑图像与文本形式的设计要求生成剪力墙设计。专用编码器分别提取两类信息，特征融合使对抗网络能够依据二者的综合语义生成结果。结构案例表明，该方法的设计性能优于仅使用图像的基准方法。其他图像生成任务进一步检验了这一融合策略在训练数据有限时的广泛适用性。",
+    "figure_caption_zh": "TxtImg2Img 对文本和图像特征进行编码、融合与学习的网络架构。"
+  },
+  {
+    "id": "lu2022-structgan-phy",
+    "title": "Intelligent structural design of shear wall residence using physics-enhanced generative adversarial networks",
+    "year": 2022,
+    "date": "2022-01-01",
+    "authors": [
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Yu Zhang",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Yuli Huang",
+        "affiliations": [
+          "1"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "2",
+        "text": "Engineering Design and Computing Laboratory, ETH Zurich, Zurich, Switzerland"
+      }
+    ],
+    "journal": "Earthquake Engineering & Structural Dynamics",
+    "doi": "10.1002/eqe.3632",
+    "summary": "StructGAN-PHY brings structural mechanics into adversarial learning for shear wall design. A neural surrogate estimates the physical performance of generated layouts, providing a differentiable physics loss alongside the usual data-driven feedback. An efficient structural model supplies training information for that surrogate. Building examples demonstrate improved design quality and rapid generation, showing how mechanical guidance can reduce dependence on the quality of available design examples.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/lu2022-structgan-phy.png",
+    "figure_caption": "Physics-enhanced training and the application of StructGAN-PHY to structural design.",
+    "figure_number": "1",
+    "date_precision": "year",
+    "sort_key": "2022-2022-01-01",
+    "title_zh": "基于物理增强生成对抗网络的剪力墙住宅智能结构设计",
+    "summary_zh": "StructGAN-PHY 将结构力学引入剪力墙设计的对抗学习过程。神经网络代理模型估计生成布局的物理性能，在常规数据驱动反馈之外提供可微物理损失；高效结构模型则为该代理模型提供训练信息。建筑案例展示了设计质量的提高与快速生成能力，说明力学指导能够降低生成设计对已有设计样本质量的依赖。",
+    "figure_caption_zh": "物理增强训练及 StructGAN-PHY 在结构设计中的应用。"
+  },
+  {
+    "id": "fei2022-integrated-schematic-design",
+    "title": "Integrated Schematic Design Method for Shear Wall Structures: A Practical Application of Generative Adversarial Networks",
+    "year": 2022,
+    "date": "2022-08-24",
+    "authors": [
+      {
+        "name": "Yifan Fei",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Shen Zhang",
+        "affiliations": [
+          "3"
+        ]
+      },
+      {
+        "name": "Pengfei Yin",
+        "affiliations": [
+          "3"
+        ]
+      },
+      {
+        "name": "Bo Han",
+        "affiliations": [
+          "4"
+        ]
+      },
+      {
+        "name": "Pengju Zhao",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Xingyu Chen",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "2"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Beijing Engineering Research Center of Steel and Concrete Composite Structures, Tsinghua University, Beijing 100084, China"
+      },
+      {
+        "id": "2",
+        "text": "Key Laboratory of Civil Engineering Safety and Durability of Ministry of Education, Tsinghua University, Beijing 100084, China"
+      },
+      {
+        "id": "3",
+        "text": "Central-South Architectural Design Institute Co., Ltd., Wuhan 430071, China"
+      },
+      {
+        "id": "4",
+        "text": "Beijing Institute of Architectural Design Co., Ltd., Beijing 100045, China"
+      }
+    ],
+    "journal": "Buildings",
+    "doi": "10.3390/buildings12091295",
+    "summary": "This work connects GAN-based shear wall generation to the software used in engineering practice. Architectural CAD preprocessing supplies model inputs, a cloud platform performs generation, and data conversion with parametric modeling produces structural analysis models. A building case study verifies accurate conversion and substantial efficiency gains. The integrated workflow turns image-based generative design into a usable bridge between architectural schemes and detailed structural development.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/fei2022-integrated-schematic-design.png",
+    "figure_caption": "Integrated modules connecting architectural CAD, cloud generation, and structural modeling.",
+    "figure_number": "2",
+    "date_precision": "year",
+    "sort_key": "2022-2022-08-24",
+    "title_zh": "剪力墙结构集成式方案设计方法：生成对抗网络的工程应用",
+    "summary_zh": "本研究将基于 GAN 的剪力墙生成与工程实践中使用的软件连接起来。建筑 CAD 图纸预处理提供模型输入，云平台执行生成，数据转换与参数化建模进一步形成结构分析模型。建筑案例验证了转换的准确性和显著的效率提升。该集成流程使基于图像的生成式设计成为连接建筑方案与结构深化设计的实用桥梁。",
+    "figure_caption_zh": "连接建筑 CAD、云端生成与结构建模的集成模块。"
+  },
+  {
+    "id": "liao2023-structgan-hybrid",
+    "title": "Base-isolation design of shear wall structures using physics-rule-co-guided self-supervised generative adversarial networks",
+    "year": 2023,
+    "date": "2023-01-01",
+    "authors": [
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Xinyu Wang",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Yifan Fei",
+        "affiliations": [
+          "3"
+        ]
+      },
+      {
+        "name": "Yuli Huang",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Linlin Xie",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "1"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Key Laboratory of Civil Engineering Safety and Durability of Ministry of Education, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "2",
+        "text": "School of Civil and Transportation Engineering, Beijing University of Civil Engineering and Architecture, Beijing, China"
+      },
+      {
+        "id": "3",
+        "text": "Beijing Engineering Research Center of Steel and Concrete Composite Structures, Tsinghua University, Beijing, China"
+      }
+    ],
+    "journal": "Earthquake Engineering & Structural Dynamics",
+    "doi": "10.1002/eqe.3862",
+    "summary": "StructGAN-Hybrid generates base-isolation schemes without requiring a collection of ground-truth isolation designs. Pseudo-label pretraining is followed by self-supervised learning guided jointly by a mechanical-response surrogate and a differentiable evaluator of design rules. The resulting workflow selects isolation-bearing parameters from structural layouts. Case studies show schemes that satisfy key engineering constraints and reduce structural earthquake responses, linking generative design directly to seismic resilience.",
+    "themes": [
+      "generative-design",
+      "seismic-resilience"
+    ],
+    "figure": "/assets/img/publications/liao2023-structgan-hybrid.png",
+    "figure_caption": "Physics and design rules jointly guide generation of seismic isolation schemes.",
+    "figure_number": "2",
+    "date_precision": "year",
+    "sort_key": "2023-2023-01-01",
+    "title_zh": "基于物理与规则协同引导的自监督生成对抗网络的剪力墙结构基础隔震设计",
+    "summary_zh": "StructGAN-Hybrid 无需真实隔震设计样本集即可生成基础隔震方案。模型先通过伪标签进行预训练，再由力学响应代理模型和可微设计规则评价器共同指导自监督学习。该流程依据结构布局选择隔震支座参数。案例表明，生成方案能够满足关键工程约束并降低结构地震响应，将生成式设计直接应用于抗震韧性提升。",
+    "figure_caption_zh": "物理机制与设计规则共同引导隔震方案生成。"
+  },
+  {
+    "id": "feng2023-structgan-rule",
+    "title": "Intelligent Generative Design for Shear Wall Cross-Sectional Size Using Rule-Embedded Generative Adversarial Network",
+    "year": 2023,
+    "date": "2023-09-15",
+    "authors": [
+      {
+        "name": "Yitian Feng",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Yifan Fei",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Yuanqing Lin",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "1"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing 100084, China"
+      },
+      {
+        "id": "2",
+        "text": "China Nuclear Power Engineering Co., Ltd., Zhengzhou Branch, No. 96 Zhongyuan East Rd., Zhengzhou 450052, China"
+      }
+    ],
+    "journal": "Journal of Structural Engineering",
+    "doi": "10.1061/JSENDH.STENG-12206",
+    "summary": "StructGAN-Rule incorporates explicit engineering rules into the generative design of shear wall cross-sectional sizes. Layout drawings and design conditions are encoded together, while a differentiable rule evaluator constrains training alongside adversarial feedback. Postprocessing converts generated tensors into structural models. Case studies demonstrate compliance with the selected rules and close agreement with engineers’ schemes, with substantially less time required for the schematic sizing process.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/feng2023-structgan-rule.png",
+    "figure_caption": "Rule-embedded learning and the workflow for generating shear wall cross-sectional sizes.",
+    "figure_number": "1",
+    "date_precision": "year",
+    "sort_key": "2023-2023-09-15",
+    "title_zh": "基于规则嵌入生成对抗网络的剪力墙截面尺寸智能生成式设计",
+    "summary_zh": "StructGAN-Rule 将显式工程规则引入剪力墙截面尺寸的生成式设计。布局图纸与设计条件共同编码，可微规则评价器与对抗反馈协同约束训练，后处理则将生成张量转换为结构模型。案例表明，该方法符合所采用的规则，与工程师方案高度一致，同时显著缩短了方案阶段截面尺寸设计所需的时间。",
+    "figure_caption_zh": "规则嵌入学习及剪力墙截面尺寸生成流程。"
+  },
+  {
+    "id": "liao2024-generative-ai-review",
+    "title": "Generative AI design for building structures",
+    "year": 2024,
+    "date": "2024-01-01",
+    "authors": [
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Yifan Fei",
+        "affiliations": [
+          "b"
+        ]
+      },
+      {
+        "name": "Yi Gu",
+        "affiliations": [
+          "b"
+        ]
+      },
+      {
+        "name": "Yuli Huang",
+        "affiliations": [
+          "a"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "Key Laboratory of Civil Engineering Safety and Durability of Ministry of Education, Tsinghua University, Beijing 100084, China"
+      },
+      {
+        "id": "b",
+        "text": "Beijing Engineering Research Center of Steel and Concrete Composite Structures, Tsinghua University, Beijing 100084, China"
+      }
+    ],
+    "journal": "Automation in Construction",
+    "doi": "10.1016/j.autcon.2023.105187",
+    "summary": "This review organizes generative AI for building structures around data representation, design generation, evaluation, and integration with optimization. It compares image and graph representations and surveys neural approaches that learn design knowledge from previous projects. Mechanical and empirical constraints, assessment strategies, and generation-optimization combinations are examined together. The synthesis identifies technical directions for turning learned design capabilities into efficient, reliable structural engineering workflows.",
+    "themes": [
+      "generative-design",
+      "structural-optimization"
+    ],
+    "figure": "/assets/img/publications/liao2024-generative-ai-review.png",
+    "figure_caption": "Representative neural generation approaches used in building structural design.",
+    "figure_number": "6",
+    "date_precision": "year",
+    "sort_key": "2024-2024-01-01",
+    "title_zh": "建筑结构的生成式人工智能设计",
+    "summary_zh": "本综述围绕数据表征、设计生成、评价及与优化的融合，系统梳理建筑结构生成式人工智能设计。文章比较图像和图表征，回顾从既有项目中学习设计知识的神经网络方法，并综合讨论力学与经验约束、评价策略以及生成与优化的结合方式。研究总结了将学习所得设计能力转化为高效、可靠结构工程流程的技术方向。",
+    "figure_caption_zh": "建筑结构设计中具有代表性的神经网络生成方法。"
+  },
+  {
+    "id": "yu2025-interpretable-design",
+    "title": "Intelligent generation and interpretability analysis of shear wall structure design by learning from multidimensional to high-dimensional features",
+    "year": 2025,
+    "date": "2025-01-01",
+    "authors": [
+      {
+        "name": "Yue Yu",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "You Chen",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "name": "Zihang Wang",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Shulu Zhang",
+        "affiliations": [
+          "c",
+          "d"
+        ]
+      },
+      {
+        "name": "Yongjun Kang",
+        "affiliations": [
+          "c",
+          "d"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "c"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "Department of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "b",
+        "text": "State Key Laboratory of the Bridge Intelligent and Green Construction, Chengdu, China"
+      },
+      {
+        "id": "c",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "d",
+        "text": "China Southwest Architecture Design & Research Inst Co., Ltd., Chengdu, China"
+      }
+    ],
+    "journal": "Engineering Structures",
+    "doi": "10.1016/j.engstruct.2024.119472",
+    "summary": "This study connects early-stage shear wall ratio prediction with detailed layout generation. Machine-learning models learn from geometric and seismic design parameters, while a GAN combines drawing and text features to generate layouts. SHAP analysis and controlled sensitivity studies reveal how the inputs influence each task, identifying seismic design intensity and building height as important drivers and clarifying when richer design representations are beneficial.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/yu2025-interpretable-design.png",
+    "figure_caption": "Workflow linking design feature learning, shear wall generation, and model interpretation.",
+    "figure_number": 1,
+    "online_date": "2024-12-14",
+    "volume": "325",
+    "article_number": "119472",
+    "date_precision": "year",
+    "sort_key": "2025-2024-12-14",
+    "title_zh": "从多维到高维特征学习的剪力墙结构设计智能生成与可解释性分析",
+    "summary_zh": "本研究将早期剪力墙面积比预测与详细布局生成相衔接。机器学习模型学习几何及抗震设计参数，GAN 则融合图纸与文本特征生成布局。SHAP 分析和受控敏感性研究揭示输入对两类任务的影响，识别出抗震设防烈度与建筑高度等关键因素，并说明更丰富的设计表征在何种情况下能够带来收益。",
+    "figure_caption_zh": "连接设计特征学习、剪力墙生成与模型解释的流程。"
+  },
+  {
+    "id": "han2024-feature-representation",
+    "title": "Optimized data representation and understanding method for the intelligent design of shear wall structures",
+    "year": 2024,
+    "date": "2024-01-01",
+    "authors": [
+      {
+        "name": "Jin Han",
+        "affiliations": [
+          "b"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Yi Gu",
+        "affiliations": [
+          "b"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "a",
+          "c"
+        ]
+      },
+      {
+        "name": "Qing Cai",
+        "affiliations": [
+          "d"
+        ]
+      },
+      {
+        "name": "Hongjing Xue",
+        "affiliations": [
+          "c",
+          "d"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "Department of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "b",
+        "text": "Beijing Engineering Research Center of Steel and Concrete Composite Structures, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "c",
+        "text": "Key Laboratory of Civil Engineering Safety and Durability of Ministry of Education, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "d",
+        "text": "Beijing Institute of Architectural Design Co., Ltd., Beijing, China"
+      }
+    ],
+    "journal": "Engineering Structures",
+    "doi": "10.1016/j.engstruct.2024.118500",
+    "summary": "Component-specific feature tensors replace conventional RGB drawings to make structural information explicit. Feature masks focus learning on plausible shear wall locations, while global and local GAN discriminators evaluate the overall layout and its component relationships. The resulting representation and training strategy improve agreement with engineering designs and support better seismic performance in the investigated building cases, showing how data organization can strengthen generative structural design.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/han2024-feature-representation.png",
+    "figure_caption": "Component-based feature representation and construction of the shear wall design dataset.",
+    "figure_number": 1,
+    "volume": "315",
+    "article_number": "118500",
+    "date_precision": "year",
+    "sort_key": "2024-2024-01-01",
+    "title_zh": "面向剪力墙结构智能设计的数据表征与理解优化方法",
+    "summary_zh": "该方法以面向不同构件的特征张量替代传统 RGB 图纸，使结构信息得到显式表达。特征掩码使模型聚焦于合理的剪力墙位置，全局与局部 GAN 判别器分别评价整体布局及构件关联。所提出的表征与训练策略提高了生成方案与工程师设计的一致性，并在所研究的建筑案例中改善了抗震性能，表明数据组织方式能够增强生成式结构设计。",
+    "figure_caption_zh": "基于构件的特征表征与剪力墙设计数据集构建。"
+  },
+  {
+    "id": "wang2025-expert-evaluation",
+    "title": "Expert Experience–Embedded Evaluation and Decision-Making Method for Intelligent Design of Shear Wall Structures",
+    "year": 2025,
+    "date": "2025-01-01",
+    "authors": [
+      {
+        "name": "Zihang Wang",
+        "affiliations": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "name": "Yue Yu",
+        "affiliations": [
+          "b"
+        ]
+      },
+      {
+        "name": "You Chen",
+        "affiliations": [
+          "b"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "name": "Chushu Li",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Kongguo Hu",
+        "affiliations": [
+          "d"
+        ]
+      },
+      {
+        "name": "Zhuang Tan",
+        "affiliations": [
+          "d"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "b"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "Department of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "b",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "c",
+        "text": "Beijing CiS Engineering Consulting Co., Ltd., Beijing, China"
+      },
+      {
+        "id": "d",
+        "text": "China Electronics Engineering Design Institute Co., Ltd., Beijing, China"
+      }
+    ],
+    "journal": "Journal of Computing in Civil Engineering",
+    "doi": "10.1061/JCCEE5.CPENG-6076",
+    "summary": "An expert-informed evaluation framework turns AI-generated shear wall layouts into comparable engineering alternatives. Automated data extraction and parametric modeling connect generated drawings to structural analysis, while an adaptive multilevel fuzzy evaluation combines multiple indicators with expert judgments. Case studies examine how these indicators affect the final rankings, providing an interpretable route from design generation to selection among competing structural schemes.",
+    "themes": [
+      "structural-optimization",
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/wang2025-expert-evaluation.png",
+    "figure_caption": "Expert-informed evaluation and decision-making for generated shear wall designs.",
+    "figure_number": 1,
+    "online_date": "2024-10-22",
+    "volume": "39(1)",
+    "article_number": "04024051",
+    "date_precision": "year",
+    "sort_key": "2025-2024-10-22",
+    "title_zh": "专家经验嵌入的剪力墙结构智能设计评价与决策方法",
+    "summary_zh": "该研究建立融入专家经验的评价框架，将 AI 生成的剪力墙布局转化为可比较的工程备选方案。自动化数据提取和参数化建模将生成图纸与结构分析相连接，自适应多层次模糊评价则融合多项指标与专家判断。案例研究分析这些指标如何影响最终排序，为从设计生成到结构方案择优提供了可解释的实现途径。",
+    "figure_caption_zh": "融入专家经验的剪力墙生成设计评价与决策。"
+  },
+  {
+    "id": "liao2025-rockfill-gan",
+    "title": "Intelligent zoning design of concrete-faced rockfill dams using image-parameter fusion enhanced generative adversarial networks",
+    "year": 2025,
+    "date": "2025-01-01",
+    "authors": [
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "name": "Zongliang Zhang",
+        "affiliations": [
+          "c",
+          "d"
+        ]
+      },
+      {
+        "name": "Biao Liu",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "e"
+        ]
+      },
+      {
+        "name": "Difu Liu",
+        "affiliations": [
+          "f"
+        ]
+      },
+      {
+        "name": "Qiang Liu",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Zhijie Duan",
+        "affiliations": [
+          "g"
+        ]
+      },
+      {
+        "name": "Chao Liu",
+        "affiliations": [
+          "c"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "School of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "b",
+        "text": "State Key Laboratory of the Bridge Intelligent and Green Construction, Chengdu, China"
+      },
+      {
+        "id": "c",
+        "text": "China Renewable Energy Engineering Institute, Beijing, China"
+      },
+      {
+        "id": "d",
+        "text": "Power Construction Corporation of China, Beijing, China"
+      },
+      {
+        "id": "e",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "f",
+        "text": "College of Water Conservancy and Hydropower Engineering, Hohai University, Nanjing, China"
+      },
+      {
+        "id": "g",
+        "text": "School of Civil Engineering, North China University of Technology, Beijing, China"
+      }
+    ],
+    "journal": "Engineering Structures",
+    "doi": "10.1016/j.engstruct.2025.120662",
+    "summary": "A generative design workflow combines dam profile images with engineering parameters to produce zoning schemes for concrete-faced rockfill dams. Parametrically generated examples and real designs support a two-stage GAN training strategy, followed by vectorization and geometric correction of the outputs. Engineering case studies show how multimodal feature fusion can reuse a small design archive and accelerate preliminary zoning while retaining analysis-ready geometry.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/liao2025-rockfill-gan.png",
+    "figure_caption": "Workflow from dam design data and fused features to generated zoning schemes.",
+    "figure_number": 3,
+    "online_date": "2025-06-02",
+    "volume": "339",
+    "article_number": "120662",
+    "date_precision": "year",
+    "sort_key": "2025-2025-06-02",
+    "title_zh": "基于图像与参数融合增强生成对抗网络的混凝土面板堆石坝智能分区设计",
+    "summary_zh": "该生成式设计流程融合坝体剖面图像与工程参数，生成混凝土面板堆石坝分区方案。参数化生成样本与真实设计共同支持两阶段 GAN 训练，随后对输出进行矢量化与几何修正。工程案例表明，多模态特征融合能够复用有限的设计资料，提升初步分区设计效率，同时保持输出几何可用于后续分析。",
+    "figure_caption_zh": "从坝体设计数据与融合特征到分区方案生成的流程。"
+  },
+  {
+    "id": "xia2025-wall-beam-codesign",
+    "title": "Intelligent co-design of shear wall and beam layouts using a graph neural network",
+    "year": 2025,
+    "date": "2025-01-01",
+    "authors": [
+      {
+        "name": "Jikang Xia",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "name": "Bo Han",
+        "affiliations": [
+          "d"
+        ]
+      },
+      {
+        "name": "Shulu Zhang",
+        "affiliations": [
+          "c",
+          "e"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "c"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "School of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "b",
+        "text": "State Key Laboratory of the Bridge Intelligent and Green Construction, Chengdu, China"
+      },
+      {
+        "id": "c",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "d",
+        "text": "Beijing Hemu AI-structure Co., Ltd., Beijing, China"
+      },
+      {
+        "id": "e",
+        "text": "China Southwest Architecture Design & Research Inst Co., Ltd., Chengdu, China"
+      }
+    ],
+    "journal": "Automation in Construction",
+    "doi": "10.1016/j.autcon.2025.106024",
+    "summary": "Shear walls and beams are represented together as a graph so that their layouts can be generated jointly. A GraphSAGE model learns the coupled component relationships from augmented design data, and engineering rules refine the predicted layout through postprocessing. The study demonstrates stronger agreement with engineer-designed walls and beams than a sequential approach, highlighting the value of explicitly modeling dependencies between structural components.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/xia2025-wall-beam-codesign.png",
+    "figure_caption": "Graph representation, joint wall–beam generation, and rule-based layout refinement.",
+    "figure_number": 2,
+    "online_date": "2025-02-04",
+    "volume": "172",
+    "article_number": "106024",
+    "date_precision": "year",
+    "sort_key": "2025-2025-02-04",
+    "title_zh": "基于图神经网络的剪力墙与梁布局智能协同设计",
+    "summary_zh": "该方法将剪力墙和梁共同表征为图，实现二者布局的联合生成。GraphSAGE 模型从增强后的设计数据中学习构件间的耦合关系，工程规则则通过后处理完善预测布局。研究表明，相较顺序设计方法，该方法在墙和梁的布局上与工程师设计具有更高一致性，体现了显式建模结构构件依赖关系的价值。",
+    "figure_caption_zh": "图表征、墙梁联合生成与基于规则的布局完善。"
+  },
+  {
+    "id": "fei2025-optimization-data",
+    "title": "Data enhancement for generative AI design of shear wall structures incorporating structural optimization and diffusion models",
+    "year": 2025,
+    "date": "2025-01-01",
+    "authors": [
+      {
+        "name": "Yifan Fei",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Hong Guan",
+        "affiliations": [
+          "3"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Key Laboratory of Civil Engineering Safety and Durability of China Education Ministry, Department of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "2",
+        "text": "Department of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "3",
+        "text": "School of Engineering and Built Environment, Griffith University, Southport, Queensland, Australia"
+      }
+    ],
+    "journal": "Advances in Structural Engineering",
+    "doi": "10.1177/13694332251353614",
+    "summary": "Structural optimization is used to improve the examples from which a diffusion model learns shear wall layout design. Regression relationships supplement incomplete design information, and an optimization stage balances mechanical requirements and material use before model training. Comparing models trained on original and enhanced data shows fewer physically noncompliant outputs and more consistent design performance, establishing training-data quality as an engineering design variable.",
+    "themes": [
+      "structural-optimization",
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/fei2025-optimization-data.png",
+    "figure_caption": "Generative design workflow with a structural optimization stage for training-data enhancement.",
+    "figure_number": 1,
+    "date_precision": "year",
+    "sort_key": "2025-2025-01-01",
+    "title_zh": "融合结构优化与扩散模型的剪力墙结构生成式人工智能设计数据增强",
+    "summary_zh": "本研究利用结构优化改善扩散模型学习剪力墙布局设计所用的样本。回归关系补充不完整的设计信息，优化阶段在模型训练之前平衡力学要求与材料用量。基于原始数据和增强数据训练的模型对比表明，增强数据能够减少不满足物理要求的生成结果，并提高设计性能的一致性，从而将训练数据质量纳入工程设计的可调控因素。",
+    "figure_caption_zh": "通过结构优化增强训练数据的生成式设计流程。"
+  },
+  {
+    "id": "qin2025-brb-retrofit",
+    "title": "Comparative analysis of intelligent retrofit design methods of RC frame structures using buckling-restrained braces",
+    "year": 2025,
+    "date": "2025-01-01",
+    "authors": [
+      {
+        "name": "Sizhong Qin",
+        "affiliations": [
+          "3"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "name": "Zhuang Tan",
+        "affiliations": [
+          "4"
+        ]
+      },
+      {
+        "name": "Kongguo Hu",
+        "affiliations": [
+          "4"
+        ]
+      },
+      {
+        "name": "Yuan Gao",
+        "affiliations": [
+          "4"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "3"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "School of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "2",
+        "text": "State Key Laboratory of the Bridge Intelligent and Green Construction, Chengdu, China"
+      },
+      {
+        "id": "3",
+        "text": "Key Laboratory of Civil Engineering Safety and Durability of China Education Ministry, Department of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "4",
+        "text": "China Electronics Engineering Design Institute Co. Ltd, Beijing, China"
+      }
+    ],
+    "journal": "Bulletin of Earthquake Engineering",
+    "doi": "10.1007/s10518-025-02164-3",
+    "summary": "A two-stage retrofit workflow first identifies feasible brace locations from building drawings, then optimizes brace placement and steel core sizes through structural analysis. Diffusion models, GANs, and graph neural networks are compared alongside genetic algorithms, simulated annealing, and online learning. The study identifies effective combinations for improving the seismic performance of reinforced concrete frames while accounting for architectural constraints, mechanical requirements, and retrofit cost.",
+    "themes": [
+      "seismic-resilience",
+      "structural-optimization",
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/qin2025-brb-retrofit.png",
+    "figure_caption": "Two-stage generative and optimization workflow for seismic retrofit using buckling-restrained braces.",
+    "figure_number": 1,
+    "online_date": "2025-04-14",
+    "volume": "23",
+    "article_number": "3353–3374",
+    "date_precision": "year",
+    "sort_key": "2025-2025-04-14",
+    "title_zh": "采用屈曲约束支撑的钢筋混凝土框架结构智能加固设计方法对比分析",
+    "summary_zh": "该两阶段加固流程先从建筑图纸中识别可行的支撑位置，再通过结构分析优化支撑布置和钢芯尺寸。研究将扩散模型、GAN 和图神经网络与遗传算法、模拟退火及在线学习进行组合比较，识别出有效的方法组合，在兼顾建筑约束、力学要求和加固成本的同时，提高钢筋混凝土框架的抗震性能。",
+    "figure_caption_zh": "采用屈曲约束支撑进行抗震加固的两阶段生成与优化流程。"
+  },
+  {
+    "id": "liao2026-beam-diffusion",
+    "title": "Beam layout design in shear wall structures using a diffusion model guided by rule-based masks",
+    "year": 2026,
+    "date": "2026-01-01",
+    "authors": [
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "name": "Jikang Xia",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Yi Gu",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "c"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "School of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "b",
+        "text": "State Key Laboratory of the Bridge Intelligent and Green Construction, Chengdu, China"
+      },
+      {
+        "id": "c",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing, China"
+      }
+    ],
+    "journal": "Engineering Structures",
+    "doi": "10.1016/j.engstruct.2026.123842",
+    "summary": "Engineering rules for spatial functionality and structural load paths are encoded into masks that guide diffusion-based beam layout generation. These masks restrict candidate beam locations while allowing the model to learn detailed arrangements from design examples. Comparative experiments and structural analyses show improved agreement with engineering layouts, including irregular plans, illustrating how explicit design knowledge can make generative models more controllable and useful for building design.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/liao2026-beam-diffusion.png",
+    "figure_caption": "Rule-generated masks constrain diffusion-based beam layout generation.",
+    "figure_number": 1,
+    "online_date": "2026-09-29",
+    "volume": "369",
+    "article_number": "123842",
+    "date_precision": "year",
+    "sort_key": "2026-2026-09-29",
+    "title_zh": "基于规则掩码引导扩散模型的剪力墙结构梁布局设计",
+    "summary_zh": "该方法将空间使用功能与结构传力路径的工程规则编码为掩码，引导基于扩散模型的梁布局生成。掩码约束候选梁位置，同时允许模型从设计样本中学习具体布置。对比试验和结构分析表明，该方法提高了生成布局与工程师设计的一致性，并适用于不规则平面，说明显式设计知识能够增强生成模型的可控性与建筑设计实用性。",
+    "figure_caption_zh": "规则生成的掩码约束基于扩散模型的梁布局生成。"
+  },
+  {
+    "id": "liao2027-photovoltaic-dqn",
+    "title": "Deep Q-network-driven cross-section optimization of rigid photovoltaic support structures with cross-structure generalization",
+    "year": 2027,
+    "date": "2027-01-01",
+    "authors": [
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "name": "Pengyu Huang",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Xintian Hao",
+        "affiliations": [
+          "c",
+          "d"
+        ]
+      },
+      {
+        "name": "Bo Han",
+        "affiliations": [
+          "d"
+        ]
+      },
+      {
+        "name": "Shengnan Huang",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "c"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "School of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "b",
+        "text": "State Key Laboratory of the Bridge Intelligent and Green Construction, Chengdu, China"
+      },
+      {
+        "id": "c",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "d",
+        "text": "Beijing Hemu AI Structure Co., Ltd., Beijing, China"
+      }
+    ],
+    "journal": "Engineering Structures",
+    "doi": "10.1016/j.engstruct.2026.124141",
+    "summary": "Cross-section selection for photovoltaic supports is formulated as a sequential decision problem. A dueling double Deep Q-Network learns member-sizing actions through interaction with structural analysis, using states and rewards that reflect mechanical feasibility and material economy. Shared experience across structural cases enables the learned policy to transfer to unseen designs, reducing repeated optimization effort while producing solutions comparable to genetic-algorithm designs in the reported comparisons.",
+    "themes": [
+      "structural-optimization"
+    ],
+    "figure": "/assets/img/publications/liao2027-photovoltaic-dqn.png",
+    "figure_caption": "Deep Q-Network training and inference for transferable photovoltaic support sizing.",
+    "figure_number": 1,
+    "volume": "372",
+    "article_number": "124141",
+    "date_precision": "year",
+    "accepted_date": "2026-11-08",
+    "sort_key": "2027-2027-01-01",
+    "title_zh": "具有跨结构泛化能力的深度 Q 网络驱动刚性光伏支架截面优化",
+    "summary_zh": "本研究将光伏支架截面选择建模为序列决策问题。采用 Dueling 架构的双重深度 Q 网络通过与结构分析交互学习构件尺寸调整动作，其状态和奖励体现力学可行性与材料经济性。不同结构案例间共享的经验使学习策略能够迁移至未见设计，减少重复优化工作，并在文中对比中获得与遗传算法设计相当的方案。",
+    "figure_caption_zh": "用于可迁移光伏支架截面设计的深度 Q 网络训练与推理。"
+  },
+  {
+    "id": "han2026-mechanics-diffusion",
+    "title": "Mechanics-embedded diffusion with closed-loop denoising for intelligent zoning design of concrete-faced rockfill dams",
+    "year": 2026,
+    "date": "2026-01-01",
+    "authors": [
+      {
+        "name": "Jin Han",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "b"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Yi Gu",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Zongliang Zhang",
+        "affiliations": [
+          "c",
+          "d"
+        ]
+      },
+      {
+        "name": "Biao Liu",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Zhijie Duan",
+        "affiliations": [
+          "e"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "Department of Civil Engineering, Tsinghua University, China"
+      },
+      {
+        "id": "b",
+        "text": "School of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "c",
+        "text": "China Renewable Energy Engineering Institute, Beijing, China"
+      },
+      {
+        "id": "d",
+        "text": "Power Construction Corporation of China, Beijing, China"
+      },
+      {
+        "id": "e",
+        "text": "School of Civil Engineering, North China University of Technology, Beijing, China"
+      }
+    ],
+    "journal": "Advanced Engineering Informatics",
+    "doi": "10.1016/j.aei.2026.105020",
+    "summary": "Mechanical feedback is embedded in both the training and inference of a diffusion model for rockfill dam zoning. A differentiable stability surrogate supplies training losses and repeatedly updates generation conditions during denoising. This closed-loop process corrects individual designs toward mechanical feasibility as they are generated, linking safety-aware learning with instance-specific refinement and reducing the use of costly zoning materials in the demonstrated case.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/han2026-mechanics-diffusion.png",
+    "figure_caption": "Surrogate-model feedback updates design conditions throughout closed-loop denoising.",
+    "figure_number": 7,
+    "online_date": "2026-07-01",
+    "volume": "76",
+    "article_number": "105020",
+    "date_precision": "year",
+    "sort_key": "2026-2026-07-01",
+    "title_zh": "面向混凝土面板堆石坝智能分区设计的闭环去噪力学嵌入扩散模型",
+    "summary_zh": "该研究将力学反馈同时嵌入堆石坝分区扩散模型的训练与推理过程。可微稳定性代理模型提供训练损失，并在去噪过程中持续更新生成条件。闭环过程在生成时针对单个设计进行力学可行性修正，将考虑安全性的学习与面向具体方案的改进相结合，并在所展示的案例中减少了高成本分区材料的使用。",
+    "figure_caption_zh": "代理模型反馈在闭环去噪全过程中更新设计条件。"
+  },
+  {
+    "id": "zhuang2027-detached-houses",
+    "title": "A diffusion-based sequential generative workflow for AI-assisted architectural and structural design of detached houses",
+    "year": 2027,
+    "date": "2027-01-01",
+    "authors": [
+      {
+        "name": "Wenjun Zhuang",
+        "affiliations": [
+          "b",
+          "c"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "a"
+        ]
+      },
+      {
+        "name": "Sizhong Qin",
+        "affiliations": [
+          "b"
+        ]
+      },
+      {
+        "name": "Shulu Zhang",
+        "affiliations": [
+          "b",
+          "d"
+        ]
+      },
+      {
+        "name": "Zhiwei Miao",
+        "affiliations": [
+          "c"
+        ]
+      },
+      {
+        "name": "Xinzheng Lu",
+        "affiliations": [
+          "b"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "a",
+        "text": "School of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "b",
+        "text": "Department of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "c",
+        "text": "School of Civil Engineering, Southeast University, Nanjing, China"
+      },
+      {
+        "id": "d",
+        "text": "China Southwest Architecture Design & Research Inst Co., Ltd., Chengdu, China"
+      }
+    ],
+    "journal": "Engineering Structures",
+    "doi": "10.1016/j.engstruct.2026.123934",
+    "summary": "A sequential workflow connects detached-house floor plans, architectural components, structural layouts, member sizing, and code verification. Transfer learning adapts a floor-plan generator to a small house-design dataset, while binary feature tensors pass geometric and semantic constraints between stages. Three engineering cases demonstrate how coordinated generative modules, refinement steps, and PKPM analysis can support a substantially faster preliminary architectural and structural design process.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/zhuang2027-detached-houses.png",
+    "figure_caption": "Sequential generation from architectural requirements to structural design and verification.",
+    "figure_number": 1,
+    "online_date": "2026-10-09",
+    "volume": "370",
+    "article_number": "123934",
+    "date_precision": "year",
+    "sort_key": "2027-2026-10-09",
+    "title_zh": "基于扩散模型的人工智能辅助独栋住宅建筑与结构设计序贯生成流程",
+    "summary_zh": "该序贯流程连接独栋住宅平面、建筑构件、结构布局、构件尺寸设计与规范校核。迁移学习使平面生成模型适应小规模住宅设计数据集，二值特征张量则在各阶段传递几何与语义约束。三个工程案例表明，协同工作的生成模块、方案完善步骤和 PKPM 分析能够显著提升初步建筑与结构设计流程的效率。",
+    "figure_caption_zh": "从建筑需求到结构设计与校核的序贯生成流程。"
+  },
+  {
+    "id": "wang2026-inclined-walls",
+    "title": "Generative AI-Driven Design Method of Planar Inclined Shear Wall Components for Building Structures",
+    "year": 2026,
+    "date": "2026-04-30",
+    "authors": [
+      {
+        "name": "Yujue Wang",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Xintian Hao",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Wenjie Liao",
+        "affiliations": [
+          "2"
+        ]
+      },
+      {
+        "name": "Shengnan Huang",
+        "affiliations": [
+          "1"
+        ]
+      },
+      {
+        "name": "Nan Li",
+        "affiliations": [
+          "3"
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "School of Civil Engineering, Tsinghua University, Beijing, China"
+      },
+      {
+        "id": "2",
+        "text": "School of Civil Engineering, Southwest Jiaotong University, Chengdu, China"
+      },
+      {
+        "id": "3",
+        "text": "Department of Construction Management, Tsinghua University, Beijing, China"
+      }
+    ],
+    "journal": "Sustainability",
+    "doi": "10.3390/su18094424",
+    "summary": "Rotation-based data augmentation expands shear wall design examples to cover inclined components, and automated vectorization converts generated tensors into usable component geometry. The study compares diffusion models, GANs, and graph neural networks on this extended task. Results show how enriching geometric coverage improves generalization beyond orthogonal layouts, with diffusion models providing the strongest performance among the compared approaches for the investigated inclined-wall designs.",
+    "themes": [
+      "generative-design"
+    ],
+    "figure": "/assets/img/publications/wang2026-inclined-walls.png",
+    "figure_caption": "Data augmentation, generative design, and vectorization for inclined shear wall components.",
+    "figure_number": 2,
+    "online_date": "2026-04-30",
+    "volume": "18(9)",
+    "article_number": "4424",
+    "date_precision": "day",
+    "sort_key": "2026-2026-04-30",
+    "title_zh": "面向建筑结构平面斜向剪力墙构件的生成式人工智能驱动设计方法",
+    "summary_zh": "基于旋转的数据增强扩展了剪力墙设计样本，使其覆盖斜向构件；自动矢量化则将生成张量转换为可用的构件几何。研究在扩展后的任务上比较扩散模型、GAN 和图神经网络。结果表明，增加几何覆盖范围能够提高模型对正交布局以外情形的泛化能力，其中扩散模型在所研究的斜向剪力墙设计中表现最佳。",
+    "figure_caption_zh": "斜向剪力墙构件的数据增强、生成式设计与矢量化。"
+  }
+]

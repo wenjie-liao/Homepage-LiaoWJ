@@ -1,0 +1,16 @@
+source "https://rubygems.org"
+gem "jekyll", "~> 4.4.1"
+gem "webrick", "~> 1.9"
+group :jekyll_plugins do
+  gem "jekyll-3rd-party-libraries"
+  gem "jekyll-cache-bust"
+  gem "al_folio_core", "= 1.0.15"
+  gem "al_folio_upgrade", "= 1.0.3"
+  gem "al_icons", "= 1.0.0"
+  gem "al_citations", "= 1.0.1"
+  gem "jekyll-feed"
+  gem "jekyll-regex-replace"
+  gem "jekyll-scholar"
+  gem "jekyll-sitemap"
+  gem "jekyll-socials"
+end

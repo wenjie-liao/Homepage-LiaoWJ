@@ -1,0 +1,6 @@
+{% if page.translation_key %}
+  {% assign translated_pages = site.pages | concat: site.projects | where: 'translation_key', page.translation_key %}
+  {% for translated_page in translated_pages %}
+    <link rel="alternate" hreflang="{% if translated_page.lang == 'zh' %}zh-CN{% else %}en{% endif %}" href="{{ translated_page.url | absolute_url }}">
+  {% endfor %}
+{% endif %}

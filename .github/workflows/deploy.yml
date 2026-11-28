@@ -1,0 +1,83 @@
+name: Build and deploy personal website
+
+on:
+  push:
+    branches: [init, main, master]
+  pull_request:
+    branches: [init, main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') && 'production' || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Ruby and install gems
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Read GitHub Pages settings
+        if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Set deployment URL
+        run: ruby scripts/pages-config.rb
+        env:
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+
+      - name: Build website
+        run: bundle exec jekyll build --config _config.yml,_config.pages.yml --trace
+        env:
+          JEKYLL_ENV: production
+
+      - name: Check required pages exist
+        shell: bash
+        run: |
+          test -s _site/index.html
+          test -s _site/research/index.html
+          test -s _site/publications/index.html
+          test -s _site/software/index.html
+          test -s _site/teaching/index.html
+          test -s _site/about/index.html
+          test -s _site/contact/index.html
+
+      - name: Check local links and content
+        run: bundle exec ruby scripts/check-site.rb _site "$(ruby -ryaml -e 'puts YAML.load_file("_config.pages.yml")["baseurl"]')"
+
+      - name: Upload built website
+        if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

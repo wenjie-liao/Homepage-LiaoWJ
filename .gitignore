@@ -1,0 +1,35 @@
+_site
+.bundle
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+assets/libs/
+assets/rendercv/rendercv_output/*.typ
+al-folio-upgrade-report.md
+node_modules/
+output/playwright/
+test-results/
+vendor
+
+# Python bytecode from bin/ helper scripts
+__pycache__/
+*.pyc
+
+_config.pages.yml
+_site_project/
+output/
+*.zip
+
+# Private source papers: never publish or commit.
+/assets/papers/
+
+# Teaching source slides stay local; the website publishes the course outline.
+/assets/teach/
+
+# Private course source files (PDF, slides, documents, interactive lessons).
+/assets/teaching/
