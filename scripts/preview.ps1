@@ -6,7 +6,6 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $siteRoot = Split-Path -Parent $PSScriptRoot
-$siblingRuby = Join-Path (Split-Path -Parent $siteRoot) 'paper-search\tools\ruby-runtime\run-ruby.ps1'
 
 if ($RubyRunner) {
     if (-not (Test-Path -LiteralPath $RubyRunner -PathType Leaf)) {
@@ -22,8 +21,6 @@ try {
             & $RubyRunner bundle exec jekyll build
         } elseif (Get-Command bundle -ErrorAction SilentlyContinue) {
             & bundle exec jekyll build
-        } elseif (Test-Path -LiteralPath $siblingRuby -PathType Leaf) {
-            & $siblingRuby bundle exec jekyll build
         } else {
             throw 'Ruby/Jekyll is required. Install Ruby and Bundler, or pass -RubyRunner. See README.md.'
         }

@@ -86,6 +86,22 @@ kramdown:
   input: GFM
 include: ["_pages"]
 exclude:
+  - private/
+  - secrets/
+  - .env
+  - .env.*
+  - "**/*.pem"
+  - "**/*.key"
+  - "**/*.p12"
+  - "**/*.pfx"
+  - "**/credentials.json"
+  - "**/service-account*.json"
+  - "**/*.log"
+  - "**/*.bak"
+  - "**/*.tmp"
+  - .aws/
+  - .ssh/
+  - .githooks/
   - assets/papers/
   - assets/teach/
   - assets/teaching/
@@ -115,6 +131,7 @@ exclude:
   - al-folio-upgrade-report.md
   - _config.pages.yml
   - output/
+  - _site_project/
   - .agents/
   - .claude/
   - .codex/

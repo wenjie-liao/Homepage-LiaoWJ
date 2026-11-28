@@ -26,6 +26,9 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Check source privacy
+        run: python3 scripts/check-privacy.py
+
       - name: Set up Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
@@ -60,6 +63,9 @@ jobs:
 
       - name: Check local links and content
         run: bundle exec ruby scripts/check-site.rb _site "$(ruby -ryaml -e 'puts YAML.load_file("_config.pages.yml")["baseurl"]')"
+
+      - name: Check built website privacy
+        run: python3 scripts/check-privacy.py --site _site
 
       - name: Upload built website
         if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')

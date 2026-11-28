@@ -1,77 +1,67 @@
 # 发布到 GitHub Pages
 
-本项目是已经个性化的 al-folio 学术网站源码。GitHub Pages 工作流已准备好；是否已经上线，以仓库 Actions 中成功的部署记录和实际访问结果为准。本地构建成功不代表网站已经发布。
+本项目是 [wenjie-liao/homepage](https://github.com/wenjie-liao/homepage) 公开仓库中的双语学术网站。以下命令均从本仓库根目录执行，无需固定的本机路径或重新初始化模板。线上状态以仓库 Actions 的部署记录和实际访问结果为准。
 
-## 首次发布
+## 发布流程
 
-1. 使用已经创建的 [wenjie-liao/homepage](https://github.com/wenjie-liao/homepage) 仓库。本地目录为 `E:\Gitcodes\Homepage-LiaoWJ`，当前开发分支为 `init`，远程默认分支为 `main`。
-2. 检查本项目源码，提交并推送 `init` 分支，包含 `.github/workflows/deploy.yml` 等隐藏目录。`init` 的推送会触发构建和链接检查，不会发布网站。
-3. 打开仓库 **Settings → Pages → Build and deployment**，将 **Source** 设为 **GitHub Actions**。本项目使用 Actions 直接发布构建产物，不使用 `gh-pages` 分支。
-4. 通过 Pull Request 将 `init` 合并到 `main`。推送到 `main` 会自动构建和发布；也可以在 **Actions → Build and deploy personal website → Run workflow** 中选择包含工作流的 `main` 分支并运行。
-5. 等待 `build`、`deploy` 都成功，打开部署记录中的网址。未配置自定义域名时，预期地址为 [https://wenjie-liao.github.io/homepage/](https://wenjie-liao.github.io/homepage/)。检查 Home、Research、Publications、Software、Teaching、About 和 Contact 页面；确认 23 篇论文和方法图正常展示，三个研究主题分别筛选出 18、5、6 篇（可交叉归类）。Teaching 应展示《工程结构智能设计》（GS30106003）的课程简介和八个专题，不提供课件下载。About 的地址是 `/about/`，其内容文件为 `_pages/cv.md`。
+1. 在 **Settings → Pages → Build and deployment** 中将 **Source** 设为 **GitHub Actions**。
+2. 审阅待提交内容，完成下文的源码隐私检查、构建和产物检查；确认公开提交使用合适的作者邮箱。
+3. 按仓库协作规则提交修改并合并到 `main`。推送到 `main` 或 `master` 会触发发布；也可在 **Actions → Build and deploy personal website → Run workflow** 选择相应分支。
+4. 等待 `build` 和 `deploy` 均成功，再打开部署记录中的网址。
 
-首次推送可能发生在 Pages 设置完成之前，导致读取 Pages 设置这一步失败；完成第 3 步后重新运行即可。若仓库要求环境审批，按 GitHub 页面提示完成 `github-pages` 环境审批。
+默认网站地址为 [英文首页](https://wenjie-liao.github.io/homepage/) 与 [中文首页](https://wenjie-liao.github.io/homepage/zh/)。发布后核对导航、对应页面语言切换、论文方法图和教学大纲。当前有 23 篇论文，三个主题分别收录 18、5、6 篇，可交叉归类；教学页有 4 门课程、33 个主题。About 的英文源文件是 `_pages/cv.md`，网页地址为 `/about/`。
 
-默认使用 GitHub 自动提供的 `GITHUB_TOKEN`，不需要在网站文件中保存个人访问令牌。访问公开网站的读者无需 GitHub 账号。免费托管要求公开源码仓库；不要把未公开资料、密码或私密文件放进仓库。
+Pull Request 和 `init` 分支只构建检查；其他分支上的手动运行也不发布。仓库无需 `gh-pages` 分支。工作流使用 GitHub 自动提供的 `GITHUB_TOKEN`，网站源码中不保存个人访问令牌。
 
-## 地址如何配置
+## 地址配置
 
-发布工作流会读取 GitHub Pages 的实际地址，由 `scripts/pages-config.rb` 临时生成 `_config.pages.yml`，覆盖正式网站的 `url` 和 `baseurl`。因此不用在源码中猜测用户名，也能适配个人站、项目站及以后配置的独立域名。
+工作流读取 Pages 地址，由 `scripts/pages-config.rb` 生成被 Git 忽略的 `_config.pages.yml`，覆盖正式站点的 `url` 和 `baseurl`。本项目默认使用 `/homepage` 前缀；源码中的内部链接须使用 `relative_url`，避免写死预览域名或部署前缀。
 
-`_config.pages.yml` 是生成文件，不需要手工编辑或提交。PR 和 `init` 分支只检查构建，不发布；`main` 或 `master` 分支上的推送和手动工作流可以发布。其他分支上的手动工作流只做构建检查。
+`_config.pages.yml` 无需手工编辑或提交。若配置自定义域名，应先完成 Pages 和 DNS 设置，再重新运行工作流。配置方法见 [GitHub 自定义域名文档](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)。
 
-本仓库属于项目站，默认地址包含 `/homepage/`。将来如果改用名为 `wenjie-liao.github.io` 的仓库，默认网址才会是站点根目录；地址生成脚本也支持这种情况。
+## 本地构建与检查
 
-独立域名可以以后再添加：先在 GitHub Pages 设置中配置域名和 DNS，再重新运行工作流。配置过程参见 [GitHub 自定义域名文档](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)。
-
-## 日常更新
-
-直接修改内容文件，提交并推送到部署分支即可。论文只在 `_data/publications.json` 维护网页事实；`_bibliography/papers.bib` 为引用导出副本。方法图位于 `assets/img/publications/`，首页位于 `_pages/about.md`，研究专题位于 `_projects/`，教学栏目位于 `_pages/teaching.md`。详细对应关系见 [内容维护指南](CONTENT-GUIDE-ZH.md)。
-
-论文年份采用正式期刊卷期年份，已核实的 `online_date` 才展示；未知月日时的 `YYYY-01-01` 仅为排序占位。列表按 `sort_key` 降序排列，其值为 `期刊年-上线日期`，缺少 `online_date` 时改用 `date`；修改日期后需同步更新该键。更新后检查 Publications 和研究专题中的同一条论文，确认展示一致。
-
-如果某次更新的构建失败，已成功发布的旧版本通常会继续提供服务；先在 Actions 中查看失败步骤，修复后再提交。
-
-## 论文全文和课程课件的本地保留
-
-论文全文和课程课件分别留在项目本地的 `assets/papers/`、`assets/teaching/`，不上传到 GitHub，也不提供网站下载。两个目录均由 Git 忽略、Jekyll 构建排除及打包脚本排除。提交前可在 `E:\Gitcodes\Homepage-LiaoWJ` 检查：
-
-```powershell
-git ls-files -- assets/papers assets/teach
-```
-
-正常结果为空，表示没有已跟踪的论文全文或课件。构建后的 `_site/assets/papers/`、`_site/assets/teaching/` 也不应存在；源码和预览 ZIP 均不应包含这些原始材料或 `output/paper-review/` 中的审校文件。不要通过移动目录或强制添加来绕过排除规则。公开的论文页面提供元数据、原创简介、方法图和 DOI 链接，教学页面提供课程简介和大纲。
-
-## 本地构建
-
-在装有 Ruby 3.3 和 Bundler 的环境中，从项目根目录运行：
+安装 Ruby 3.3、Bundler 和 Python 3 后运行；新克隆先启用提交前隐私检查：
 
 ```sh
 bundle install
-bundle exec jekyll serve --host 127.0.0.1 --port 4000
+git config core.hooksPath .githooks
+python scripts/check-privacy.py
+bundle exec jekyll build
+bundle exec ruby scripts/check-site.rb
+python scripts/check-privacy.py --site _site
 ```
 
-然后打开终端给出的本地地址。只生成静态页面时运行：
+类 Unix 环境中，如提交钩子不可执行，可运行 `chmod +x .githooks/pre-commit`。本地钩子在提交前检查；CI 无法撤回已推送的公开内容。
+
+持续预览可用 `bundle exec jekyll serve --host 127.0.0.1 --port 4000`。Windows 也可运行 `powershell -ExecutionPolicy Bypass -File .\scripts\preview.ps1 -Rebuild`，使用系统 Bundler，或通过 `-RubyRunner "<Ruby 启动脚本路径>"` 指定便携环境，详见 [README](../README.md)。GitHub Actions 在 Linux 上独立安装依赖，不需要上传本地运行环境。
+
+`Gemfile.lock` 固定依赖版本，应随源码提交。从 Windows 更新依赖时保留 Linux 平台记录；必要时运行 `bundle lock --add-platform x86_64-linux`，再验证构建。
+
+论文网页事实只在 `_data/publications.json` 维护，BibTeX 为引用导出副本。修改日期时同步维护 `sort_key`；教学双语内容统一维护在 `_data/teaching.json`。文件对应关系见 [内容维护指南](CONTENT-GUIDE-ZH.md)。
+
+## 公开仓库的隐私边界
+
+论文全文、教材、课件、作业、私有笔记和核验产物只保存在被忽略并排除发布的目录。当前跟踪情况可检查：
 
 ```sh
-bundle exec jekyll build
+git ls-files -- assets/papers assets/teach assets/teaching private output
 ```
 
-Windows 可运行 `powershell -ExecutionPolicy Bypass -File .\scripts\preview.ps1 -Rebuild`，脚本会查找系统 Bundler 或相邻 `paper-search` 项目下的便携运行环境，也可通过 `-RubyRunner` 指定位置，详见 [README](../README.md)。GitHub Actions 在 Linux 上独立安装依赖，不需要上传本地运行环境、`vendor`、`node_modules` 或 `_site`。
+结果应为空。构建目录和交付 ZIP 也不得包含这些材料。不要以强制添加或移动目录的方式绕过排除规则；图片、PDF、简历等附件发布前还需人工检查正文及元数据。
 
-`Gemfile.lock` 固定依赖版本，应一并提交；如果从 Windows 更新依赖，须保留 Linux 平台的锁定依赖，以便 GitHub 构建。必要时在有 Bundler 的环境中运行 `bundle lock --add-platform x86_64-linux`，再构建验证。
+默认隐私检查处理当前跟踪文件和暂存变更；`python scripts/check-privacy.py --history` 单独扫描本地可达历史。`.gitignore` 和修改当前文件均不能消除历史记录。若历史存在敏感信息，应单独处理；凭据需立即撤销或轮换。检查范围不覆盖外部克隆、分叉及缓存，不能据此承诺全网已清除。
 
-## 排查常见问题
+## 常见问题
 
-| 现象                         | 检查位置                                                                                               |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Actions 没有运行             | 推送分支是否为 `init`、`main` 或 `master`，`.github/workflows/deploy.yml` 是否已上传，Actions 是否启用 |
-| 读取 Pages 设置时报错        | Settings → Pages 的 Source 是否为 GitHub Actions                                                       |
-| 依赖安装失败                 | Actions 中 Ruby 安装日志与 `Gemfile.lock`；不要直接删除版本锁后盲目升级                                |
-| 网址带项目名时图片或链接失效 | 内部链接是否使用 `relative_url`，是否绕过了部署地址生成脚本                                            |
-| 已完成构建但没有上线         | 查看独立的 `deploy` 任务；PR 和 `init` 不部署，需要合并到 `main`                                       |
-| 内容更新了但浏览器仍显示旧版 | 等待最新部署完成后刷新，必要时强制刷新浏览器缓存                                                       |
+| 现象 | 检查位置 |
+| --- | --- |
+| Actions 没有运行 | 推送分支是否在工作流触发范围内，工作流文件是否已提交，Actions 是否启用 |
+| 隐私检查失败 | 按报告中的文件与类型审阅；删除敏感内容，不在公开日志中复述原值 |
+| 读取 Pages 设置时报错 | Settings → Pages 的 Source 是否为 GitHub Actions |
+| 依赖安装失败 | Ruby 安装日志与 `Gemfile.lock`；保留版本锁后定位问题 |
+| 项目站图片或链接失效 | 内部链接是否使用 `relative_url`，是否使用生成的部署配置构建 |
+| 构建成功但没有上线 | 独立的 `deploy` 任务是否执行成功，当前是否为部署分支 |
+| 浏览器仍显示旧内容 | 最新部署是否完成，必要时刷新浏览器缓存 |
 
-工作流基于 [GitHub 自定义 Pages 工作流说明](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) 和 [Ruby 安装 Action](https://github.com/ruby/setup-ruby)，核查日期：2026-11-27。
-
-网站现有中文 `/zh/` 与英文原路径两个版本；导航中的语言切换保持当前栏目。部署时同时检查两种语言的论文页与教学页；教学源材料包含多种格式，整个 `assets/teaching/` 目录均不得进入公开仓库或构建产物。
+工作流配置参见 [GitHub 自定义 Pages 工作流说明](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) 和 [Ruby 安装 Action](https://github.com/ruby/setup-ruby)。
