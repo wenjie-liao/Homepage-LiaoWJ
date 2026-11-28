@@ -1,6 +1,7 @@
 ---
 layout: about
-title: 首页
+title: 廖文杰 · 学术主页
+description: 廖文杰，西南交通大学土木工程学院副研究员。研究聚焦人工智能驱动的结构设计与优化，包括建筑结构生成式设计和结构抗震韧性。
 permalink: /zh/
 lang: zh
 translation_key: home
@@ -11,7 +12,6 @@ profile:
   image_circular: false
   more_info: >
     <p><span class="profile-name-zh" lang="zh-CN">廖文杰</span> · <span class="profile-name-en" lang="en">Wenjie Liao</span></p>
-    <p class="profile-location" lang="zh-CN">中国 · 成都</p>
 selected_papers: false
 social: false
 announcements:

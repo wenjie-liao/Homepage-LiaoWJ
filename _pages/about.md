@@ -3,6 +3,7 @@ lang: en
 translation_key: home
 layout: about
 title: Home
+description: Wenjie Liao, Associate Research Professor at Southwest Jiaotong University. Research on AI-driven structural design and optimization, including generative design of building structures and structural seismic resilience.
 permalink: /
 subtitle: Associate Research Professor · School of Civil Engineering · Southwest Jiaotong University
 profile:
@@ -11,7 +12,6 @@ profile:
   image_circular: false
   more_info: >
     <p><span class="profile-name-zh" lang="zh-CN">廖文杰</span> · <span class="profile-name-en" lang="en">Wenjie Liao</span></p>
-    <p class="profile-location" lang="en">Chengdu, China</p>
 selected_papers: false
 social: false
 announcements:

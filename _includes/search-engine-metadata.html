@@ -1,0 +1,15 @@
+{%- assign google_verification = site.search_engine_verification.google | default: '' | strip -%}
+{%- assign bing_verification = site.search_engine_verification.bing | default: '' | strip -%}
+{%- assign baidu_verification = site.search_engine_verification.baidu | default: '' | strip -%}
+{% if google_verification != '' %}
+  <meta name="google-site-verification" content="{{ google_verification | escape }}">
+{% endif %}
+{% if bing_verification != '' %}
+  <meta name="msvalidate.01" content="{{ bing_verification | escape }}">
+{% endif %}
+{% if baidu_verification != '' %}
+  <meta name="baidu-site-verification" content="{{ baidu_verification | escape }}">
+{% endif %}
+{% if page.robots %}
+  <meta name="robots" content="{{ page.robots | escape }}">
+{% endif %}

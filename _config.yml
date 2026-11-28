@@ -4,8 +4,9 @@ first_name: Wenjie
 middle_name: ""
 last_name: Liao
 description: >-
-  Wenjie Liao, Southwest Jiaotong University. Research on generative AI for
-  structural design, intelligent optimization, and seismic resilience.
+  Wenjie Liao, Southwest Jiaotong University. Research on AI-driven structural
+  design and optimization, including generative design of building structures
+  and structural seismic resilience.
 keywords: Wenjie Liao, 廖文杰, structural engineering, generative AI, structural design, optimization, seismic resilience
 lang: en
 icon: favicon.svg
@@ -13,16 +14,20 @@ url: ""
 baseurl: ""
 footer_text: >-
   <a href="https://faculty.swjtu.edu.cn/liaowj/" lang="zh-CN">中文主页</a> ·
+  <a href="https://scholar.google.com/citations?user=aE1me5sAAAAJ&amp;hl=zh-CN">Google Scholar</a> ·
   <a href="https://github.com/wenjie-liao">GitHub</a> ·
   <a href="https://orcid.org/0000-0002-9309-0054">ORCID</a>
 footer_text_zh: >-
   <a href="https://faculty.swjtu.edu.cn/liaowj/" lang="zh-CN">中文主页</a> ·
+  <a href="https://scholar.google.com/citations?user=aE1me5sAAAAJ&amp;hl=zh-CN">Google Scholar</a> ·
   <a href="https://github.com/wenjie-liao">GitHub</a> ·
   <a href="https://orcid.org/0000-0002-9309-0054">ORCID</a>
 contact_note: Academic inquiries are welcome by email.
 last_updated: false
 navbar_fixed: true
 footer_fixed: false
+# Aggregate page views from Busuanzi; remote requests run only in production.
+enable_visitor_counter: true
 max_width: 1080px
 back_to_top: false
 theme: al_folio_core
@@ -51,6 +56,13 @@ al_folio:
     auto_apply_safe_fixes: false
 
 search_enabled: false
+# Public HTML verification identifiers, not API keys or account credentials.
+# Paste only each provider's meta tag content value. Leave unused values empty.
+# Setup instructions: docs/SEARCH-ENGINES-ZH.md
+search_engine_verification:
+  google: "Ng-cBBqnEQe3pG3F5h5D5MeEvlTXADBli4AxGB2jb5Q"
+  bing: ""
+  baidu: ""
 socials_in_search: false
 posts_in_search: false
 bib_search: false
